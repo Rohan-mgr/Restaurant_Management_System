@@ -95,7 +95,14 @@ namespace Restaurant_Management_System
 
         private void loginHover(object sender, EventArgs e)
         {
-           
+            login.BackColor = Color.White;
+            login.ForeColor = Color.FromArgb(255, 170, 76);
+        }
+
+        private void EndHover(object sender, EventArgs e)
+        {
+            login.BackColor = Color.FromArgb(255, 170, 76);
+            login.ForeColor = Color.White;
         }
     }
 }
