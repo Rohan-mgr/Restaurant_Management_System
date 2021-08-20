@@ -92,5 +92,10 @@ namespace Restaurant_Management_System
         {
 
         }
+
+        private void loginHover(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

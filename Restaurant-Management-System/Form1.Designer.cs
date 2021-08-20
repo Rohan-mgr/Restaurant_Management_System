@@ -113,6 +113,7 @@ namespace Restaurant_Management_System
             this.login.Text = "Log In";
             this.login.UseVisualStyleBackColor = false;
             this.login.Click += new System.EventHandler(this.login_Click);
+            this.login.MouseEnter += new System.EventHandler(this.loginHover);
             // 
             // label1
             // 
