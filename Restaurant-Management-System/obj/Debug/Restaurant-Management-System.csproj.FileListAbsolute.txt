@@ -18,3 +18,4 @@ C:\Users\Lenovo Flex\Restaurant_Management_System\Restaurant-Management-System\o
 C:\Users\Lenovo Flex\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant-Management-System.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo Flex\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant-Management-System.exe
 C:\Users\Lenovo Flex\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant-Management-System.pdb
+C:\Users\Lenovo Flex\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.Form2.resources
