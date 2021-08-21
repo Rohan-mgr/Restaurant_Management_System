@@ -1,8 +1,10 @@
+create database login
+
 use login;
 
 create table loginInfo(
 	id int primary key identity,
-	name nvarchar(50), 
+	name nvarchar(50) unique, 
 	password nvarchar(50)
 );
 insert into loginInfo (name, password) values ('Rohan123', 'pass#123');

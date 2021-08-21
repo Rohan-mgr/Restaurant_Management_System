@@ -8,3 +8,13 @@ C:\Users\HP\source\repos\Restaurant-Management-System\Restaurant-Management-Syst
 C:\Users\HP\source\repos\Restaurant-Management-System\Restaurant-Management-System\obj\Debug\Restaurant-Management-System.csproj.CoreCompileInputs.cache
 C:\Users\HP\source\repos\Restaurant-Management-System\Restaurant-Management-System\obj\Debug\Restaurant-Management-System.exe
 C:\Users\HP\source\repos\Restaurant-Management-System\Restaurant-Management-System\obj\Debug\Restaurant-Management-System.pdb
+C:\Users\Lenovo Flex\Restaurant_Management_System\Restaurant-Management-System\bin\Debug\Restaurant-Management-System.exe.config
+C:\Users\Lenovo Flex\Restaurant_Management_System\Restaurant-Management-System\bin\Debug\Restaurant-Management-System.exe
+C:\Users\Lenovo Flex\Restaurant_Management_System\Restaurant-Management-System\bin\Debug\Restaurant-Management-System.pdb
+C:\Users\Lenovo Flex\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant-Management-System.csproj.AssemblyReference.cache
+C:\Users\Lenovo Flex\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.loginForm.resources
+C:\Users\Lenovo Flex\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.Properties.Resources.resources
+C:\Users\Lenovo Flex\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant-Management-System.csproj.GenerateResource.cache
+C:\Users\Lenovo Flex\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant-Management-System.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo Flex\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant-Management-System.exe
+C:\Users\Lenovo Flex\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant-Management-System.pdb

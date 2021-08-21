@@ -55,7 +55,7 @@ namespace Restaurant_Management_System
             this.heading.Location = new System.Drawing.Point(132, 162);
             this.heading.Name = "heading";
             this.heading.Size = new System.Drawing.Size(154, 54);
-            this.heading.TabIndex = 1;
+            this.heading.TabIndex = 4;
             this.heading.Text = "Log In";
             // 
             // panel1
@@ -64,7 +64,7 @@ namespace Restaurant_Management_System
             this.panel1.Location = new System.Drawing.Point(60, 292);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(310, 2);
-            this.panel1.TabIndex = 3;
+            this.panel1.TabIndex = 5;
             // 
             // panel2
             // 
@@ -72,7 +72,7 @@ namespace Restaurant_Management_System
             this.panel2.Location = new System.Drawing.Point(60, 377);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(310, 2);
-            this.panel2.TabIndex = 3;
+            this.panel2.TabIndex = 6;
             // 
             // passwordBox
             // 
@@ -85,7 +85,7 @@ namespace Restaurant_Management_System
             this.passwordBox.Name = "passwordBox";
             this.passwordBox.PasswordChar = '*';
             this.passwordBox.Size = new System.Drawing.Size(261, 33);
-            this.passwordBox.TabIndex = 4;
+            this.passwordBox.TabIndex = 1;
             // 
             // nameBox
             // 
@@ -97,7 +97,7 @@ namespace Restaurant_Management_System
             this.nameBox.Multiline = true;
             this.nameBox.Name = "nameBox";
             this.nameBox.Size = new System.Drawing.Size(261, 33);
-            this.nameBox.TabIndex = 4;
+            this.nameBox.TabIndex = 0;
             // 
             // login
             // 
@@ -109,7 +109,7 @@ namespace Restaurant_Management_System
             this.login.Location = new System.Drawing.Point(60, 421);
             this.login.Name = "login";
             this.login.Size = new System.Drawing.Size(300, 46);
-            this.login.TabIndex = 5;
+            this.login.TabIndex = 2;
             this.login.Text = "Log In";
             this.login.UseVisualStyleBackColor = false;
             this.login.Click += new System.EventHandler(this.login_Click);
@@ -125,7 +125,7 @@ namespace Restaurant_Management_System
             this.label1.Location = new System.Drawing.Point(183, 492);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 29);
-            this.label1.TabIndex = 6;
+            this.label1.TabIndex = 3;
             this.label1.Text = "Exit";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -136,7 +136,7 @@ namespace Restaurant_Management_System
             this.hidePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.hidePassword.ForeColor = System.Drawing.SystemColors.Control;
             this.hidePassword.Image = global::Restaurant_Management_System.Properties.Resources.icons8_hide_20;
-            this.hidePassword.Location = new System.Drawing.Point(337, 346);
+            this.hidePassword.Location = new System.Drawing.Point(337, 340);
             this.hidePassword.Name = "hidePassword";
             this.hidePassword.Size = new System.Drawing.Size(33, 26);
             this.hidePassword.TabIndex = 7;
@@ -150,7 +150,7 @@ namespace Restaurant_Management_System
             this.showPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.showPassword.ForeColor = System.Drawing.SystemColors.Control;
             this.showPassword.Image = global::Restaurant_Management_System.Properties.Resources.icons8_eye_20;
-            this.showPassword.Location = new System.Drawing.Point(337, 346);
+            this.showPassword.Location = new System.Drawing.Point(337, 342);
             this.showPassword.Name = "showPassword";
             this.showPassword.Size = new System.Drawing.Size(33, 26);
             this.showPassword.TabIndex = 7;
