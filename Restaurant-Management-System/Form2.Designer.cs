@@ -98,10 +98,10 @@ namespace Restaurant_Management_System
             this.tabControl1.Controls.Add(this.res_tab);
             this.tabControl1.Controls.Add(this.payment);
             this.tabControl1.Controls.Add(this.customer_log);
-            this.tabControl1.Location = new System.Drawing.Point(1, 59);
+            this.tabControl1.Location = new System.Drawing.Point(0, 59);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1078, 591);
+            this.tabControl1.Size = new System.Drawing.Size(1124, 591);
             this.tabControl1.TabIndex = 0;
             // 
             // order_tab
@@ -110,7 +110,7 @@ namespace Restaurant_Management_System
             this.order_tab.Location = new System.Drawing.Point(4, 29);
             this.order_tab.Name = "order_tab";
             this.order_tab.Padding = new System.Windows.Forms.Padding(3);
-            this.order_tab.Size = new System.Drawing.Size(1070, 558);
+            this.order_tab.Size = new System.Drawing.Size(1116, 558);
             this.order_tab.TabIndex = 0;
             this.order_tab.Text = "Order";
             this.order_tab.UseVisualStyleBackColor = true;
@@ -125,7 +125,7 @@ namespace Restaurant_Management_System
             this.tabControl2.Location = new System.Drawing.Point(-4, 0);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1068, 552);
+            this.tabControl2.Size = new System.Drawing.Size(1124, 552);
             this.tabControl2.TabIndex = 0;
             // 
             // tabPage1
@@ -163,7 +163,7 @@ namespace Restaurant_Management_System
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1060, 519);
+            this.tabPage1.Size = new System.Drawing.Size(1116, 519);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Snacks";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -189,7 +189,7 @@ namespace Restaurant_Management_System
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(847, 227);
+            this.pictureBox7.Location = new System.Drawing.Point(909, 227);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(186, 100);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -199,7 +199,7 @@ namespace Restaurant_Management_System
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(640, 227);
+            this.pictureBox8.Location = new System.Drawing.Point(688, 227);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(186, 100);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -209,7 +209,7 @@ namespace Restaurant_Management_System
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(436, 227);
+            this.pictureBox9.Location = new System.Drawing.Point(467, 227);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(186, 100);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -219,7 +219,7 @@ namespace Restaurant_Management_System
             // pictureBox10
             // 
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(231, 227);
+            this.pictureBox10.Location = new System.Drawing.Point(246, 227);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(186, 100);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -248,7 +248,7 @@ namespace Restaurant_Management_System
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(847, 32);
+            this.pictureBox6.Location = new System.Drawing.Point(909, 32);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(186, 100);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -259,7 +259,7 @@ namespace Restaurant_Management_System
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(640, 32);
+            this.pictureBox5.Location = new System.Drawing.Point(688, 32);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(186, 100);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -269,7 +269,7 @@ namespace Restaurant_Management_System
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(436, 32);
+            this.pictureBox4.Location = new System.Drawing.Point(467, 32);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(186, 100);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -280,7 +280,7 @@ namespace Restaurant_Management_System
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(231, 32);
+            this.pictureBox3.Location = new System.Drawing.Point(246, 32);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(186, 100);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -290,7 +290,7 @@ namespace Restaurant_Management_System
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 145);
+            this.label3.Location = new System.Drawing.Point(24, 147);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(98, 20);
             this.label3.TabIndex = 1;
@@ -313,7 +313,7 @@ namespace Restaurant_Management_System
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1060, 519);
+            this.tabPage2.Size = new System.Drawing.Size(1116, 519);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Main Course";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -323,7 +323,7 @@ namespace Restaurant_Management_System
             this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1060, 519);
+            this.tabPage3.Size = new System.Drawing.Size(1116, 519);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Dessert";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -332,7 +332,7 @@ namespace Restaurant_Management_System
             // 
             this.tabPage4.Location = new System.Drawing.Point(4, 29);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1060, 519);
+            this.tabPage4.Size = new System.Drawing.Size(1116, 519);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Cold Drinks";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -341,7 +341,7 @@ namespace Restaurant_Management_System
             // 
             this.tabPage5.Location = new System.Drawing.Point(4, 29);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1060, 519);
+            this.tabPage5.Size = new System.Drawing.Size(1116, 519);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Beverages";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -427,7 +427,7 @@ namespace Restaurant_Management_System
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(227, 337);
+            this.label9.Location = new System.Drawing.Point(242, 338);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(55, 20);
             this.label9.TabIndex = 7;
@@ -437,7 +437,7 @@ namespace Restaurant_Management_System
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(432, 337);
+            this.label10.Location = new System.Drawing.Point(463, 338);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(94, 20);
             this.label10.TabIndex = 7;
@@ -446,7 +446,7 @@ namespace Restaurant_Management_System
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(636, 337);
+            this.label11.Location = new System.Drawing.Point(684, 338);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(81, 20);
             this.label11.TabIndex = 7;
@@ -455,7 +455,7 @@ namespace Restaurant_Management_System
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(843, 337);
+            this.label12.Location = new System.Drawing.Point(905, 338);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(102, 20);
             this.label12.TabIndex = 7;
@@ -554,7 +554,7 @@ namespace Restaurant_Management_System
             this.label19.BackColor = System.Drawing.Color.DarkOrange;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.SystemColors.Control;
-            this.label19.Location = new System.Drawing.Point(353, 339);
+            this.label19.Location = new System.Drawing.Point(368, 340);
             this.label19.Name = "label19";
             this.label19.Padding = new System.Windows.Forms.Padding(1);
             this.label19.Size = new System.Drawing.Size(64, 19);
@@ -567,7 +567,7 @@ namespace Restaurant_Management_System
             this.label20.BackColor = System.Drawing.Color.DarkOrange;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.SystemColors.Control;
-            this.label20.Location = new System.Drawing.Point(558, 337);
+            this.label20.Location = new System.Drawing.Point(589, 339);
             this.label20.Name = "label20";
             this.label20.Padding = new System.Windows.Forms.Padding(1);
             this.label20.Size = new System.Drawing.Size(64, 19);
@@ -580,7 +580,7 @@ namespace Restaurant_Management_System
             this.label21.BackColor = System.Drawing.Color.DarkOrange;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.SystemColors.Control;
-            this.label21.Location = new System.Drawing.Point(762, 337);
+            this.label21.Location = new System.Drawing.Point(810, 340);
             this.label21.Name = "label21";
             this.label21.Padding = new System.Windows.Forms.Padding(1);
             this.label21.Size = new System.Drawing.Size(64, 19);
@@ -593,7 +593,7 @@ namespace Restaurant_Management_System
             this.label22.BackColor = System.Drawing.Color.DarkOrange;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.SystemColors.Control;
-            this.label22.Location = new System.Drawing.Point(969, 339);
+            this.label22.Location = new System.Drawing.Point(1031, 340);
             this.label22.Name = "label22";
             this.label22.Padding = new System.Windows.Forms.Padding(1);
             this.label22.Size = new System.Drawing.Size(64, 19);
