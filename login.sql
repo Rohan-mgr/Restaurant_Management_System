@@ -7,7 +7,7 @@ create table loginInfo(
 	name nvarchar(50) unique, 
 	password nvarchar(50)
 );
-insert into loginInfo (name, password) values ('Rohan123', 'pass#123');
+insert into loginInfo (name, password) values ('Kushal123', 'passport');
 
 select * from loginInfo;
 
