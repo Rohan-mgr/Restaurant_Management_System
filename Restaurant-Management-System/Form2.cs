@@ -66,5 +66,10 @@ namespace Restaurant_Management_System
         {
  
         }
+
+        private void label77_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
