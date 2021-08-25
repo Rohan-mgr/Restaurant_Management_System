@@ -71,5 +71,65 @@ namespace Restaurant_Management_System
         {
 
         }
+
+        private void label74_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label83_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label84_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label85_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label86_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label88_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label96_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label99_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label100_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label101_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label102_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
