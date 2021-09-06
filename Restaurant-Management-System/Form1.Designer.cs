@@ -103,6 +103,7 @@ namespace Restaurant_Management_System
             // 
             this.login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(76)))));
             this.login.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.login.FlatAppearance.BorderSize = 0;
             this.login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login.Font = new System.Drawing.Font("Microsoft New Tai Lue", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login.ForeColor = System.Drawing.Color.White;

@@ -131,5 +131,44 @@ namespace Restaurant_Management_System
         {
 
         }
+
+        private void tabControl2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(tabcontrol2.SelectedTab == snacks)
+            {
+                categoryBox.Text = "Snacks";
+            }
+            else if (tabcontrol2.SelectedTab == mainCourse)
+            {
+                categoryBox2.Text = "Main Course";
+            }
+            else if(tabcontrol2.SelectedTab == dessert)
+            {
+                categoryBox3.Text = "Dessert"; 
+            }
+            else if(tabcontrol2.SelectedTab == coldDrinks)
+            {
+                categoryBox4.Text = "Cold Drinks";
+            }
+            else
+            {
+                categoryBox5.Text = "Beverages";
+            }
+        }
+
+        private void label75_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label69_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label71_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
