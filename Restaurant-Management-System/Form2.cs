@@ -170,5 +170,10 @@ namespace Restaurant_Management_System
         {
 
         }
+
+        private void categoryBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -24,7 +24,6 @@ C:\Users\HP\source\repos\Restaurant_Management_System\Restaurant-Management-Syst
 C:\Users\HP\source\repos\Restaurant_Management_System\Restaurant-Management-System\bin\Debug\Restaurant-Management-System.pdb
 C:\Users\HP\source\repos\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant-Management-System.csproj.AssemblyReference.cache
 C:\Users\HP\source\repos\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.loginForm.resources
-C:\Users\HP\source\repos\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.Form2.resources
 C:\Users\HP\source\repos\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.Properties.Resources.resources
 C:\Users\HP\source\repos\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant-Management-System.csproj.GenerateResource.cache
 C:\Users\HP\source\repos\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant-Management-System.csproj.CoreCompileInputs.cache
@@ -41,3 +40,5 @@ C:\Users\DELL\Restaurant_Management_System\Restaurant-Management-System\obj\Debu
 C:\Users\DELL\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant-Management-System.csproj.CoreCompileInputs.cache
 C:\Users\DELL\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant-Management-System.exe
 C:\Users\DELL\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant-Management-System.pdb
+C:\Users\HP\source\repos\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.NewForm.resources
+C:\Users\HP\source\repos\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.Form2.resources
