@@ -29,11 +29,21 @@ namespace Restaurant_Management_System
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.order_tab = new System.Windows.Forms.TabPage();
-            this.tabcontrol2 = new System.Windows.Forms.TabControl();
+            this.secondaryTab = new System.Windows.Forms.TabControl();
             this.snacks = new System.Windows.Forms.TabPage();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.addSnacksToCart = new System.Windows.Forms.Button();
+            this.snackTotalPrice = new System.Windows.Forms.TextBox();
+            this.label110 = new System.Windows.Forms.Label();
+            this.snackUnitPrice = new System.Windows.Forms.TextBox();
+            this.label109 = new System.Windows.Forms.Label();
+            this.label108 = new System.Windows.Forms.Label();
+            this.snackQuantity = new System.Windows.Forms.NumericUpDown();
+            this.snackComboList = new System.Windows.Forms.ComboBox();
             this.label107 = new System.Windows.Forms.Label();
             this.categoryBox = new System.Windows.Forms.TextBox();
             this.category = new System.Windows.Forms.Label();
@@ -42,8 +52,8 @@ namespace Restaurant_Management_System
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label07 = new System.Windows.Forms.Label();
+            this.bakeSharklabel = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -51,13 +61,32 @@ namespace Restaurant_Management_System
             this.label16 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.mainCourse = new System.Windows.Forms.TabPage();
+            this.addmainCourseToCart = new System.Windows.Forms.Button();
+            this.mainCourseTotalPrice = new System.Windows.Forms.TextBox();
+            this.label111 = new System.Windows.Forms.Label();
+            this.mainCourseUnitPrice = new System.Windows.Forms.TextBox();
+            this.label112 = new System.Windows.Forms.Label();
+            this.label113 = new System.Windows.Forms.Label();
+            this.mainCourseQuantity = new System.Windows.Forms.NumericUpDown();
+            this.mainCourseComboList = new System.Windows.Forms.ComboBox();
+            this.label114 = new System.Windows.Forms.Label();
             this.categoryBox2 = new System.Windows.Forms.TextBox();
             this.label103 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
@@ -80,7 +109,26 @@ namespace Restaurant_Management_System
             this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
+            this.pictureBox27 = new System.Windows.Forms.PictureBox();
+            this.pictureBox28 = new System.Windows.Forms.PictureBox();
+            this.pictureBox29 = new System.Windows.Forms.PictureBox();
+            this.pictureBox30 = new System.Windows.Forms.PictureBox();
+            this.pictureBox31 = new System.Windows.Forms.PictureBox();
             this.dessert = new System.Windows.Forms.TabPage();
+            this.addDessertToCart = new System.Windows.Forms.Button();
+            this.dessertTotalPrice = new System.Windows.Forms.TextBox();
+            this.label115 = new System.Windows.Forms.Label();
+            this.dessertUnitPrice = new System.Windows.Forms.TextBox();
+            this.label116 = new System.Windows.Forms.Label();
+            this.label117 = new System.Windows.Forms.Label();
+            this.dessertQuantity = new System.Windows.Forms.NumericUpDown();
+            this.dessertComboList = new System.Windows.Forms.ComboBox();
+            this.label118 = new System.Windows.Forms.Label();
             this.categoryBox3 = new System.Windows.Forms.TextBox();
             this.label104 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
@@ -103,7 +151,26 @@ namespace Restaurant_Management_System
             this.label80 = new System.Windows.Forms.Label();
             this.label81 = new System.Windows.Forms.Label();
             this.label82 = new System.Windows.Forms.Label();
+            this.pictureBox32 = new System.Windows.Forms.PictureBox();
+            this.pictureBox33 = new System.Windows.Forms.PictureBox();
+            this.pictureBox34 = new System.Windows.Forms.PictureBox();
+            this.pictureBox35 = new System.Windows.Forms.PictureBox();
+            this.pictureBox36 = new System.Windows.Forms.PictureBox();
+            this.pictureBox37 = new System.Windows.Forms.PictureBox();
+            this.pictureBox38 = new System.Windows.Forms.PictureBox();
+            this.pictureBox39 = new System.Windows.Forms.PictureBox();
+            this.pictureBox40 = new System.Windows.Forms.PictureBox();
+            this.pictureBox41 = new System.Windows.Forms.PictureBox();
             this.coldDrinks = new System.Windows.Forms.TabPage();
+            this.addDrinksToCart = new System.Windows.Forms.Button();
+            this.coldDrinkTotalPrice = new System.Windows.Forms.TextBox();
+            this.label119 = new System.Windows.Forms.Label();
+            this.coldDrinkUnitPrice = new System.Windows.Forms.TextBox();
+            this.label120 = new System.Windows.Forms.Label();
+            this.label121 = new System.Windows.Forms.Label();
+            this.coldDrinkQuantity = new System.Windows.Forms.NumericUpDown();
+            this.coldDrinkItems = new System.Windows.Forms.ComboBox();
+            this.label122 = new System.Windows.Forms.Label();
             this.categoryBox4 = new System.Windows.Forms.TextBox();
             this.label105 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -126,7 +193,26 @@ namespace Restaurant_Management_System
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.beverages = new System.Windows.Forms.TabPage();
+            this.addBeverageToCart = new System.Windows.Forms.Button();
+            this.beverageTotalPrice = new System.Windows.Forms.TextBox();
+            this.label123 = new System.Windows.Forms.Label();
+            this.beverageUnitPrice = new System.Windows.Forms.TextBox();
+            this.label124 = new System.Windows.Forms.Label();
+            this.label125 = new System.Windows.Forms.Label();
+            this.beverageQuantity = new System.Windows.Forms.NumericUpDown();
+            this.beverageItems = new System.Windows.Forms.ComboBox();
+            this.label126 = new System.Windows.Forms.Label();
             this.categoryBox5 = new System.Windows.Forms.TextBox();
             this.label106 = new System.Windows.Forms.Label();
             this.label83 = new System.Windows.Forms.Label();
@@ -149,56 +235,6 @@ namespace Restaurant_Management_System
             this.label100 = new System.Windows.Forms.Label();
             this.label101 = new System.Windows.Forms.Label();
             this.label102 = new System.Windows.Forms.Label();
-            this.res_tab = new System.Windows.Forms.TabPage();
-            this.payment = new System.Windows.Forms.TabPage();
-            this.customer_log = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.f2_close = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_min = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.pictureBox24 = new System.Windows.Forms.PictureBox();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
-            this.pictureBox26 = new System.Windows.Forms.PictureBox();
-            this.pictureBox27 = new System.Windows.Forms.PictureBox();
-            this.pictureBox28 = new System.Windows.Forms.PictureBox();
-            this.pictureBox29 = new System.Windows.Forms.PictureBox();
-            this.pictureBox30 = new System.Windows.Forms.PictureBox();
-            this.pictureBox31 = new System.Windows.Forms.PictureBox();
-            this.pictureBox32 = new System.Windows.Forms.PictureBox();
-            this.pictureBox33 = new System.Windows.Forms.PictureBox();
-            this.pictureBox34 = new System.Windows.Forms.PictureBox();
-            this.pictureBox35 = new System.Windows.Forms.PictureBox();
-            this.pictureBox36 = new System.Windows.Forms.PictureBox();
-            this.pictureBox37 = new System.Windows.Forms.PictureBox();
-            this.pictureBox38 = new System.Windows.Forms.PictureBox();
-            this.pictureBox39 = new System.Windows.Forms.PictureBox();
-            this.pictureBox40 = new System.Windows.Forms.PictureBox();
-            this.pictureBox41 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.pictureBox42 = new System.Windows.Forms.PictureBox();
             this.pictureBox43 = new System.Windows.Forms.PictureBox();
             this.pictureBox44 = new System.Windows.Forms.PictureBox();
@@ -209,25 +245,34 @@ namespace Restaurant_Management_System
             this.pictureBox49 = new System.Windows.Forms.PictureBox();
             this.pictureBox50 = new System.Windows.Forms.PictureBox();
             this.pictureBox51 = new System.Windows.Forms.PictureBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.label108 = new System.Windows.Forms.Label();
-            this.label109 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label110 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.addToCart = new System.Windows.Forms.Button();
+            this.res_tab = new System.Windows.Forms.TabPage();
+            this.payment = new System.Windows.Forms.TabPage();
+            this.grandTotalLabel = new System.Windows.Forms.Label();
+            this.grandTotalTxt = new System.Windows.Forms.Label();
+            this.printBtn = new System.Windows.Forms.Button();
+            this.removeBtn = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantityColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unitpriceColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalpriceColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customer_log = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.f2_close = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_min = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.restaurantName = new System.Windows.Forms.Label();
+            this.tagTitle = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.order_tab.SuspendLayout();
-            this.tabcontrol2.SuspendLayout();
+            this.secondaryTab.SuspendLayout();
             this.snacks.SuspendLayout();
-            this.mainCourse.SuspendLayout();
-            this.dessert.SuspendLayout();
-            this.coldDrinks.SuspendLayout();
-            this.beverages.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.snackQuantity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -238,6 +283,8 @@ namespace Restaurant_Management_System
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.mainCourse.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mainCourseQuantity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
@@ -248,6 +295,8 @@ namespace Restaurant_Management_System
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
+            this.dessert.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dessertQuantity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
@@ -258,6 +307,8 @@ namespace Restaurant_Management_System
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
+            this.coldDrinks.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.coldDrinkQuantity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -268,6 +319,8 @@ namespace Restaurant_Management_System
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            this.beverages.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.beverageQuantity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
@@ -278,8 +331,11 @@ namespace Restaurant_Management_System
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            this.payment.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -288,16 +344,17 @@ namespace Restaurant_Management_System
             this.tabControl1.Controls.Add(this.res_tab);
             this.tabControl1.Controls.Add(this.payment);
             this.tabControl1.Controls.Add(this.customer_log);
-            this.tabControl1.Location = new System.Drawing.Point(0, 59);
+            this.tabControl1.Location = new System.Drawing.Point(0, 71);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1124, 591);
             this.tabControl1.TabIndex = 0;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // order_tab
             // 
-            this.order_tab.Controls.Add(this.tabcontrol2);
+            this.order_tab.Controls.Add(this.secondaryTab);
             this.order_tab.Location = new System.Drawing.Point(4, 29);
             this.order_tab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.order_tab.Name = "order_tab";
@@ -307,32 +364,31 @@ namespace Restaurant_Management_System
             this.order_tab.Text = "Order";
             this.order_tab.UseVisualStyleBackColor = true;
             // 
-            // tabcontrol2
+            // secondaryTab
             // 
-            this.tabcontrol2.Controls.Add(this.snacks);
-            this.tabcontrol2.Controls.Add(this.mainCourse);
-            this.tabcontrol2.Controls.Add(this.dessert);
-            this.tabcontrol2.Controls.Add(this.coldDrinks);
-            this.tabcontrol2.Controls.Add(this.beverages);
-            this.tabcontrol2.Location = new System.Drawing.Point(-4, 0);
-            this.tabcontrol2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabcontrol2.Name = "tabcontrol2";
-            this.tabcontrol2.SelectedIndex = 0;
-            this.tabcontrol2.Size = new System.Drawing.Size(1124, 552);
-            this.tabcontrol2.TabIndex = 0;
-            this.tabcontrol2.SelectedIndexChanged += new System.EventHandler(this.tabControl2_SelectedIndexChanged);
+            this.secondaryTab.Controls.Add(this.snacks);
+            this.secondaryTab.Controls.Add(this.mainCourse);
+            this.secondaryTab.Controls.Add(this.dessert);
+            this.secondaryTab.Controls.Add(this.coldDrinks);
+            this.secondaryTab.Controls.Add(this.beverages);
+            this.secondaryTab.Location = new System.Drawing.Point(-4, -1);
+            this.secondaryTab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.secondaryTab.Name = "secondaryTab";
+            this.secondaryTab.SelectedIndex = 0;
+            this.secondaryTab.Size = new System.Drawing.Size(1124, 552);
+            this.secondaryTab.TabIndex = 0;
+            this.secondaryTab.SelectedIndexChanged += new System.EventHandler(this.tabControl2_SelectedIndexChanged);
             // 
             // snacks
             // 
-            this.snacks.Controls.Add(this.addToCart);
-            this.snacks.Controls.Add(this.textBox2);
+            this.snacks.Controls.Add(this.addSnacksToCart);
+            this.snacks.Controls.Add(this.snackTotalPrice);
             this.snacks.Controls.Add(this.label110);
-            this.snacks.Controls.Add(this.textBox1);
+            this.snacks.Controls.Add(this.snackUnitPrice);
             this.snacks.Controls.Add(this.label109);
             this.snacks.Controls.Add(this.label108);
-            this.snacks.Controls.Add(this.numericUpDown2);
-            this.snacks.Controls.Add(this.numericUpDown1);
-            this.snacks.Controls.Add(this.comboBox1);
+            this.snacks.Controls.Add(this.snackQuantity);
+            this.snacks.Controls.Add(this.snackComboList);
             this.snacks.Controls.Add(this.label107);
             this.snacks.Controls.Add(this.categoryBox);
             this.snacks.Controls.Add(this.category);
@@ -341,8 +397,8 @@ namespace Restaurant_Management_System
             this.snacks.Controls.Add(this.label20);
             this.snacks.Controls.Add(this.label19);
             this.snacks.Controls.Add(this.label18);
-            this.snacks.Controls.Add(this.label17);
-            this.snacks.Controls.Add(this.label7);
+            this.snacks.Controls.Add(this.label07);
+            this.snacks.Controls.Add(this.bakeSharklabel);
             this.snacks.Controls.Add(this.label15);
             this.snacks.Controls.Add(this.label14);
             this.snacks.Controls.Add(this.label13);
@@ -375,10 +431,78 @@ namespace Restaurant_Management_System
             this.snacks.Text = "Snacks";
             this.snacks.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // addSnacksToCart
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.addSnacksToCart.BackColor = System.Drawing.Color.DarkOrange;
+            this.addSnacksToCart.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.addSnacksToCart.FlatAppearance.BorderSize = 0;
+            this.addSnacksToCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addSnacksToCart.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addSnacksToCart.ForeColor = System.Drawing.Color.White;
+            this.addSnacksToCart.Location = new System.Drawing.Point(882, 413);
+            this.addSnacksToCart.Name = "addSnacksToCart";
+            this.addSnacksToCart.Size = new System.Drawing.Size(212, 46);
+            this.addSnacksToCart.TabIndex = 30;
+            this.addSnacksToCart.Text = "Add To Cart";
+            this.addSnacksToCart.UseVisualStyleBackColor = false;
+            this.addSnacksToCart.Click += new System.EventHandler(this.addSnacksToCart_Click);
+            // 
+            // snackTotalPrice
+            // 
+            this.snackTotalPrice.Location = new System.Drawing.Point(784, 423);
+            this.snackTotalPrice.Name = "snackTotalPrice";
+            this.snackTotalPrice.ReadOnly = true;
+            this.snackTotalPrice.Size = new System.Drawing.Size(75, 26);
+            this.snackTotalPrice.TabIndex = 29;
+            // 
+            // label110
+            // 
+            this.label110.AutoSize = true;
+            this.label110.Location = new System.Drawing.Point(700, 426);
+            this.label110.Name = "label110";
+            this.label110.Size = new System.Drawing.Size(83, 20);
+            this.label110.TabIndex = 28;
+            this.label110.Text = "Total Price";
+            // 
+            // snackUnitPrice
+            // 
+            this.snackUnitPrice.Location = new System.Drawing.Point(633, 423);
+            this.snackUnitPrice.Name = "snackUnitPrice";
+            this.snackUnitPrice.ReadOnly = true;
+            this.snackUnitPrice.Size = new System.Drawing.Size(59, 26);
+            this.snackUnitPrice.TabIndex = 29;
+            // 
+            // label109
+            // 
+            this.label109.AutoSize = true;
+            this.label109.Location = new System.Drawing.Point(554, 426);
+            this.label109.Name = "label109";
+            this.label109.Size = new System.Drawing.Size(77, 20);
+            this.label109.TabIndex = 28;
+            this.label109.Text = "Unit Price";
+            // 
+            // label108
+            // 
+            this.label108.AutoSize = true;
+            this.label108.Location = new System.Drawing.Point(414, 426);
+            this.label108.Name = "label108";
+            this.label108.Size = new System.Drawing.Size(68, 20);
+            this.label108.TabIndex = 27;
+            this.label108.Text = "Quantity";
+            // 
+            // snackQuantity
+            // 
+            this.snackQuantity.Location = new System.Drawing.Point(483, 423);
+            this.snackQuantity.Name = "snackQuantity";
+            this.snackQuantity.Size = new System.Drawing.Size(65, 26);
+            this.snackQuantity.TabIndex = 26;
+            this.snackQuantity.ValueChanged += new System.EventHandler(this.snackQuantity_ValueChanged);
+            this.snackQuantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.snackQuantity_KeyPress);
+            // 
+            // snackComboList
+            // 
+            this.snackComboList.FormattingEnabled = true;
+            this.snackComboList.Items.AddRange(new object[] {
             "French Fries",
             "Sandwich",
             "Devil Eggs",
@@ -389,10 +513,11 @@ namespace Restaurant_Management_System
             "Clam Cakes",
             "Bear Claw",
             "Ham Biscuits"});
-            this.comboBox1.Location = new System.Drawing.Point(279, 423);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(127, 28);
-            this.comboBox1.TabIndex = 24;
+            this.snackComboList.Location = new System.Drawing.Point(279, 423);
+            this.snackComboList.Name = "snackComboList";
+            this.snackComboList.Size = new System.Drawing.Size(127, 28);
+            this.snackComboList.TabIndex = 24;
+            this.snackComboList.SelectedIndexChanged += new System.EventHandler(this.snackComboList_SelectedIndexChanged);
             // 
             // label107
             // 
@@ -430,9 +555,9 @@ namespace Restaurant_Management_System
             this.label22.Location = new System.Drawing.Point(1030, 338);
             this.label22.Name = "label22";
             this.label22.Padding = new System.Windows.Forms.Padding(1);
-            this.label22.Size = new System.Drawing.Size(64, 19);
+            this.label22.Size = new System.Drawing.Size(56, 19);
             this.label22.TabIndex = 20;
-            this.label22.Text = "Rs.100/-";
+            this.label22.Text = "Rs.70/-";
             // 
             // label21
             // 
@@ -445,7 +570,7 @@ namespace Restaurant_Management_System
             this.label21.Padding = new System.Windows.Forms.Padding(1);
             this.label21.Size = new System.Drawing.Size(64, 19);
             this.label21.TabIndex = 19;
-            this.label21.Text = "Rs.100/-";
+            this.label21.Text = "Rs.125/-";
             // 
             // label20
             // 
@@ -458,7 +583,7 @@ namespace Restaurant_Management_System
             this.label20.Padding = new System.Windows.Forms.Padding(1);
             this.label20.Size = new System.Drawing.Size(64, 19);
             this.label20.TabIndex = 18;
-            this.label20.Text = "Rs.100/-";
+            this.label20.Text = "Rs.300/-";
             // 
             // label19
             // 
@@ -471,7 +596,7 @@ namespace Restaurant_Management_System
             this.label19.Padding = new System.Windows.Forms.Padding(1);
             this.label19.Size = new System.Drawing.Size(64, 19);
             this.label19.TabIndex = 17;
-            this.label19.Text = "Rs.100/-";
+            this.label19.Text = "Rs.150/-";
             // 
             // label18
             // 
@@ -486,31 +611,31 @@ namespace Restaurant_Management_System
             this.label18.TabIndex = 16;
             this.label18.Text = "Rs.100/-";
             // 
-            // label17
+            // label07
             // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.DarkOrange;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.Control;
-            this.label17.Location = new System.Drawing.Point(150, 338);
-            this.label17.Name = "label17";
-            this.label17.Padding = new System.Windows.Forms.Padding(1);
-            this.label17.Size = new System.Drawing.Size(64, 19);
-            this.label17.TabIndex = 15;
-            this.label17.Text = "Rs.100/-";
+            this.label07.AutoSize = true;
+            this.label07.BackColor = System.Drawing.Color.DarkOrange;
+            this.label07.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label07.ForeColor = System.Drawing.SystemColors.Control;
+            this.label07.Location = new System.Drawing.Point(150, 338);
+            this.label07.Name = "label07";
+            this.label07.Padding = new System.Windows.Forms.Padding(1);
+            this.label07.Size = new System.Drawing.Size(64, 19);
+            this.label07.TabIndex = 15;
+            this.label07.Text = "Rs.100/-";
             // 
-            // label7
+            // bakeSharklabel
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.DarkOrange;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(1030, 148);
-            this.label7.Name = "label7";
-            this.label7.Padding = new System.Windows.Forms.Padding(1);
-            this.label7.Size = new System.Drawing.Size(64, 19);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Rs.100/-";
+            this.bakeSharklabel.AutoSize = true;
+            this.bakeSharklabel.BackColor = System.Drawing.Color.DarkOrange;
+            this.bakeSharklabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bakeSharklabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.bakeSharklabel.Location = new System.Drawing.Point(1030, 148);
+            this.bakeSharklabel.Name = "bakeSharklabel";
+            this.bakeSharklabel.Padding = new System.Windows.Forms.Padding(1);
+            this.bakeSharklabel.Size = new System.Drawing.Size(64, 19);
+            this.bakeSharklabel.TabIndex = 14;
+            this.bakeSharklabel.Text = "Rs.250/-";
             // 
             // label15
             // 
@@ -521,9 +646,9 @@ namespace Restaurant_Management_System
             this.label15.Location = new System.Drawing.Point(810, 145);
             this.label15.Name = "label15";
             this.label15.Padding = new System.Windows.Forms.Padding(1);
-            this.label15.Size = new System.Drawing.Size(64, 19);
+            this.label15.Size = new System.Drawing.Size(56, 19);
             this.label15.TabIndex = 14;
-            this.label15.Text = "Rs.100/-";
+            this.label15.Text = "Rs.50/-";
             // 
             // label14
             // 
@@ -534,9 +659,9 @@ namespace Restaurant_Management_System
             this.label14.Location = new System.Drawing.Point(588, 145);
             this.label14.Name = "label14";
             this.label14.Padding = new System.Windows.Forms.Padding(1);
-            this.label14.Size = new System.Drawing.Size(64, 19);
+            this.label14.Size = new System.Drawing.Size(56, 19);
             this.label14.TabIndex = 14;
-            this.label14.Text = "Rs.100/-";
+            this.label14.Text = "Rs.75/-";
             // 
             // label13
             // 
@@ -549,7 +674,7 @@ namespace Restaurant_Management_System
             this.label13.Padding = new System.Windows.Forms.Padding(1);
             this.label13.Size = new System.Drawing.Size(64, 19);
             this.label13.TabIndex = 14;
-            this.label13.Text = "Rs.100/-";
+            this.label13.Text = "Rs.200/-";
             // 
             // label8
             // 
@@ -586,6 +711,50 @@ namespace Restaurant_Management_System
             this.label5.Size = new System.Drawing.Size(78, 20);
             this.label5.TabIndex = 12;
             this.label5.Text = "Sandwich";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::Restaurant_Management_System.Properties.Resources.ham_biscuits;
+            this.pictureBox7.Location = new System.Drawing.Point(909, 228);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 11;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::Restaurant_Management_System.Properties.Resources.bear_claw;
+            this.pictureBox8.Location = new System.Drawing.Point(688, 228);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 10;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::Restaurant_Management_System.Properties.Resources.clam_cakes;
+            this.pictureBox9.Location = new System.Drawing.Point(467, 228);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 9;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::Restaurant_Management_System.Properties.Resources.bacon;
+            this.pictureBox10.Location = new System.Drawing.Point(246, 228);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 8;
+            this.pictureBox10.TabStop = false;
             // 
             // label12
             // 
@@ -633,6 +802,63 @@ namespace Restaurant_Management_System
             this.label4.TabIndex = 7;
             this.label4.Text = "Chocolate Chips";
             // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::Restaurant_Management_System.Properties.Resources.chocolate_chips;
+            this.pictureBox11.Location = new System.Drawing.Point(28, 228);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 6;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Restaurant_Management_System.Properties.Resources.bake_and_shark;
+            this.pictureBox6.Location = new System.Drawing.Point(909, 32);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 5;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Restaurant_Management_System.Properties.Resources.oreos;
+            this.pictureBox5.Location = new System.Drawing.Point(688, 32);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 4;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Restaurant_Management_System.Properties.Resources.devil_eggs;
+            this.pictureBox4.Location = new System.Drawing.Point(467, 32);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Restaurant_Management_System.Properties.Resources.club_sandwich_recipe;
+            this.pictureBox3.Location = new System.Drawing.Point(246, 32);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -643,8 +869,29 @@ namespace Restaurant_Management_System
             this.label3.Text = "French Fries";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Restaurant_Management_System.Properties.Resources._54659021;
+            this.pictureBox2.Location = new System.Drawing.Point(28, 32);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // mainCourse
             // 
+            this.mainCourse.Controls.Add(this.addmainCourseToCart);
+            this.mainCourse.Controls.Add(this.mainCourseTotalPrice);
+            this.mainCourse.Controls.Add(this.label111);
+            this.mainCourse.Controls.Add(this.mainCourseUnitPrice);
+            this.mainCourse.Controls.Add(this.label112);
+            this.mainCourse.Controls.Add(this.label113);
+            this.mainCourse.Controls.Add(this.mainCourseQuantity);
+            this.mainCourse.Controls.Add(this.mainCourseComboList);
+            this.mainCourse.Controls.Add(this.label114);
             this.mainCourse.Controls.Add(this.categoryBox2);
             this.mainCourse.Controls.Add(this.label103);
             this.mainCourse.Controls.Add(this.label43);
@@ -685,6 +932,102 @@ namespace Restaurant_Management_System
             this.mainCourse.TabIndex = 1;
             this.mainCourse.Text = "Main Course";
             this.mainCourse.UseVisualStyleBackColor = true;
+            // 
+            // addmainCourseToCart
+            // 
+            this.addmainCourseToCart.BackColor = System.Drawing.Color.DarkOrange;
+            this.addmainCourseToCart.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.addmainCourseToCart.FlatAppearance.BorderSize = 0;
+            this.addmainCourseToCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addmainCourseToCart.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addmainCourseToCart.ForeColor = System.Drawing.Color.White;
+            this.addmainCourseToCart.Location = new System.Drawing.Point(885, 413);
+            this.addmainCourseToCart.Name = "addmainCourseToCart";
+            this.addmainCourseToCart.Size = new System.Drawing.Size(212, 46);
+            this.addmainCourseToCart.TabIndex = 59;
+            this.addmainCourseToCart.Text = "Add To Cart";
+            this.addmainCourseToCart.UseVisualStyleBackColor = false;
+            this.addmainCourseToCart.Click += new System.EventHandler(this.addmainCourseToCart_Click);
+            // 
+            // mainCourseTotalPrice
+            // 
+            this.mainCourseTotalPrice.Location = new System.Drawing.Point(785, 423);
+            this.mainCourseTotalPrice.Name = "mainCourseTotalPrice";
+            this.mainCourseTotalPrice.ReadOnly = true;
+            this.mainCourseTotalPrice.Size = new System.Drawing.Size(75, 26);
+            this.mainCourseTotalPrice.TabIndex = 57;
+            // 
+            // label111
+            // 
+            this.label111.AutoSize = true;
+            this.label111.Location = new System.Drawing.Point(701, 426);
+            this.label111.Name = "label111";
+            this.label111.Size = new System.Drawing.Size(83, 20);
+            this.label111.TabIndex = 55;
+            this.label111.Text = "Total Price";
+            // 
+            // mainCourseUnitPrice
+            // 
+            this.mainCourseUnitPrice.Location = new System.Drawing.Point(634, 423);
+            this.mainCourseUnitPrice.Name = "mainCourseUnitPrice";
+            this.mainCourseUnitPrice.ReadOnly = true;
+            this.mainCourseUnitPrice.Size = new System.Drawing.Size(59, 26);
+            this.mainCourseUnitPrice.TabIndex = 58;
+            // 
+            // label112
+            // 
+            this.label112.AutoSize = true;
+            this.label112.Location = new System.Drawing.Point(555, 426);
+            this.label112.Name = "label112";
+            this.label112.Size = new System.Drawing.Size(77, 20);
+            this.label112.TabIndex = 56;
+            this.label112.Text = "Unit Price";
+            // 
+            // label113
+            // 
+            this.label113.AutoSize = true;
+            this.label113.Location = new System.Drawing.Point(415, 426);
+            this.label113.Name = "label113";
+            this.label113.Size = new System.Drawing.Size(68, 20);
+            this.label113.TabIndex = 54;
+            this.label113.Text = "Quantity";
+            // 
+            // mainCourseQuantity
+            // 
+            this.mainCourseQuantity.Location = new System.Drawing.Point(484, 423);
+            this.mainCourseQuantity.Name = "mainCourseQuantity";
+            this.mainCourseQuantity.Size = new System.Drawing.Size(65, 26);
+            this.mainCourseQuantity.TabIndex = 53;
+            this.mainCourseQuantity.ValueChanged += new System.EventHandler(this.mainCourseQuantity_ValueChanged);
+            // 
+            // mainCourseComboList
+            // 
+            this.mainCourseComboList.FormattingEnabled = true;
+            this.mainCourseComboList.Items.AddRange(new object[] {
+            "Momo",
+            "Pizza",
+            "Chow-Mein",
+            "Burger",
+            "Spaghetti",
+            "FryRice",
+            "Chicken-Roast",
+            "Biryani",
+            "Pork Chops",
+            "Ham Toast"});
+            this.mainCourseComboList.Location = new System.Drawing.Point(279, 423);
+            this.mainCourseComboList.Name = "mainCourseComboList";
+            this.mainCourseComboList.Size = new System.Drawing.Size(127, 28);
+            this.mainCourseComboList.TabIndex = 52;
+            this.mainCourseComboList.SelectedIndexChanged += new System.EventHandler(this.mainCourseComboList_SelectedIndexChanged);
+            // 
+            // label114
+            // 
+            this.label114.AutoSize = true;
+            this.label114.Location = new System.Drawing.Point(233, 426);
+            this.label114.Name = "label114";
+            this.label114.Size = new System.Drawing.Size(49, 20);
+            this.label114.TabIndex = 51;
+            this.label114.Text = "Items";
             // 
             // categoryBox2
             // 
@@ -923,8 +1266,127 @@ namespace Restaurant_Management_System
             this.label60.TabIndex = 27;
             this.label60.Text = "Chicken-Roast";
             // 
+            // pictureBox22
+            // 
+            this.pictureBox22.Image = global::Restaurant_Management_System.Properties.Resources.ham_biscuits1;
+            this.pictureBox22.Location = new System.Drawing.Point(909, 228);
+            this.pictureBox22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox22.TabIndex = 34;
+            this.pictureBox22.TabStop = false;
+            // 
+            // pictureBox23
+            // 
+            this.pictureBox23.Image = global::Restaurant_Management_System.Properties.Resources.pork_chops;
+            this.pictureBox23.Location = new System.Drawing.Point(688, 228);
+            this.pictureBox23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox23.TabIndex = 33;
+            this.pictureBox23.TabStop = false;
+            // 
+            // pictureBox24
+            // 
+            this.pictureBox24.Image = global::Restaurant_Management_System.Properties.Resources.biryani;
+            this.pictureBox24.Location = new System.Drawing.Point(467, 228);
+            this.pictureBox24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox24.TabIndex = 32;
+            this.pictureBox24.TabStop = false;
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.Image = global::Restaurant_Management_System.Properties.Resources.chicken_roast;
+            this.pictureBox25.Location = new System.Drawing.Point(246, 228);
+            this.pictureBox25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox25.TabIndex = 31;
+            this.pictureBox25.TabStop = false;
+            // 
+            // pictureBox26
+            // 
+            this.pictureBox26.Image = global::Restaurant_Management_System.Properties.Resources.fry_rice;
+            this.pictureBox26.Location = new System.Drawing.Point(28, 228);
+            this.pictureBox26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox26.TabIndex = 26;
+            this.pictureBox26.TabStop = false;
+            // 
+            // pictureBox27
+            // 
+            this.pictureBox27.Image = global::Restaurant_Management_System.Properties.Resources.spaghetti;
+            this.pictureBox27.Location = new System.Drawing.Point(909, 32);
+            this.pictureBox27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox27.Name = "pictureBox27";
+            this.pictureBox27.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox27.TabIndex = 25;
+            this.pictureBox27.TabStop = false;
+            // 
+            // pictureBox28
+            // 
+            this.pictureBox28.Image = global::Restaurant_Management_System.Properties.Resources.burger;
+            this.pictureBox28.Location = new System.Drawing.Point(688, 32);
+            this.pictureBox28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox28.Name = "pictureBox28";
+            this.pictureBox28.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox28.TabIndex = 24;
+            this.pictureBox28.TabStop = false;
+            // 
+            // pictureBox29
+            // 
+            this.pictureBox29.Image = global::Restaurant_Management_System.Properties.Resources.chowmein;
+            this.pictureBox29.Location = new System.Drawing.Point(467, 32);
+            this.pictureBox29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox29.Name = "pictureBox29";
+            this.pictureBox29.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox29.TabIndex = 23;
+            this.pictureBox29.TabStop = false;
+            // 
+            // pictureBox30
+            // 
+            this.pictureBox30.Image = global::Restaurant_Management_System.Properties.Resources.pizza;
+            this.pictureBox30.Location = new System.Drawing.Point(246, 32);
+            this.pictureBox30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox30.Name = "pictureBox30";
+            this.pictureBox30.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox30.TabIndex = 22;
+            this.pictureBox30.TabStop = false;
+            // 
+            // pictureBox31
+            // 
+            this.pictureBox31.Image = global::Restaurant_Management_System.Properties.Resources.momo;
+            this.pictureBox31.Location = new System.Drawing.Point(28, 32);
+            this.pictureBox31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox31.Name = "pictureBox31";
+            this.pictureBox31.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox31.TabIndex = 21;
+            this.pictureBox31.TabStop = false;
+            // 
             // dessert
             // 
+            this.dessert.Controls.Add(this.addDessertToCart);
+            this.dessert.Controls.Add(this.dessertTotalPrice);
+            this.dessert.Controls.Add(this.label115);
+            this.dessert.Controls.Add(this.dessertUnitPrice);
+            this.dessert.Controls.Add(this.label116);
+            this.dessert.Controls.Add(this.label117);
+            this.dessert.Controls.Add(this.dessertQuantity);
+            this.dessert.Controls.Add(this.dessertComboList);
+            this.dessert.Controls.Add(this.label118);
             this.dessert.Controls.Add(this.categoryBox3);
             this.dessert.Controls.Add(this.label104);
             this.dessert.Controls.Add(this.label63);
@@ -965,6 +1427,102 @@ namespace Restaurant_Management_System
             this.dessert.TabIndex = 2;
             this.dessert.Text = "Dessert";
             this.dessert.UseVisualStyleBackColor = true;
+            // 
+            // addDessertToCart
+            // 
+            this.addDessertToCart.BackColor = System.Drawing.Color.DarkOrange;
+            this.addDessertToCart.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.addDessertToCart.FlatAppearance.BorderSize = 0;
+            this.addDessertToCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addDessertToCart.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addDessertToCart.ForeColor = System.Drawing.Color.White;
+            this.addDessertToCart.Location = new System.Drawing.Point(882, 413);
+            this.addDessertToCart.Name = "addDessertToCart";
+            this.addDessertToCart.Size = new System.Drawing.Size(212, 46);
+            this.addDessertToCart.TabIndex = 89;
+            this.addDessertToCart.Text = "Add To Cart";
+            this.addDessertToCart.UseVisualStyleBackColor = false;
+            this.addDessertToCart.Click += new System.EventHandler(this.addDessertToCart_Click);
+            // 
+            // dessertTotalPrice
+            // 
+            this.dessertTotalPrice.Location = new System.Drawing.Point(784, 423);
+            this.dessertTotalPrice.Name = "dessertTotalPrice";
+            this.dessertTotalPrice.ReadOnly = true;
+            this.dessertTotalPrice.Size = new System.Drawing.Size(75, 26);
+            this.dessertTotalPrice.TabIndex = 87;
+            // 
+            // label115
+            // 
+            this.label115.AutoSize = true;
+            this.label115.Location = new System.Drawing.Point(700, 426);
+            this.label115.Name = "label115";
+            this.label115.Size = new System.Drawing.Size(83, 20);
+            this.label115.TabIndex = 85;
+            this.label115.Text = "Total Price";
+            // 
+            // dessertUnitPrice
+            // 
+            this.dessertUnitPrice.Location = new System.Drawing.Point(633, 423);
+            this.dessertUnitPrice.Name = "dessertUnitPrice";
+            this.dessertUnitPrice.ReadOnly = true;
+            this.dessertUnitPrice.Size = new System.Drawing.Size(59, 26);
+            this.dessertUnitPrice.TabIndex = 88;
+            // 
+            // label116
+            // 
+            this.label116.AutoSize = true;
+            this.label116.Location = new System.Drawing.Point(554, 426);
+            this.label116.Name = "label116";
+            this.label116.Size = new System.Drawing.Size(77, 20);
+            this.label116.TabIndex = 86;
+            this.label116.Text = "Unit Price";
+            // 
+            // label117
+            // 
+            this.label117.AutoSize = true;
+            this.label117.Location = new System.Drawing.Point(414, 426);
+            this.label117.Name = "label117";
+            this.label117.Size = new System.Drawing.Size(68, 20);
+            this.label117.TabIndex = 84;
+            this.label117.Text = "Quantity";
+            // 
+            // dessertQuantity
+            // 
+            this.dessertQuantity.Location = new System.Drawing.Point(483, 423);
+            this.dessertQuantity.Name = "dessertQuantity";
+            this.dessertQuantity.Size = new System.Drawing.Size(65, 26);
+            this.dessertQuantity.TabIndex = 83;
+            this.dessertQuantity.ValueChanged += new System.EventHandler(this.dessertQuantity_ValueChanged);
+            // 
+            // dessertComboList
+            // 
+            this.dessertComboList.FormattingEnabled = true;
+            this.dessertComboList.Items.AddRange(new object[] {
+            "Lava cake",
+            "Cake",
+            "Cheesecake",
+            "Chocolate",
+            "Brownies",
+            "Fried Ice cream",
+            "Waffles",
+            "Caramet apple tart",
+            "Nut Truffle",
+            "Classic Cannoli"});
+            this.dessertComboList.Location = new System.Drawing.Point(279, 423);
+            this.dessertComboList.Name = "dessertComboList";
+            this.dessertComboList.Size = new System.Drawing.Size(127, 28);
+            this.dessertComboList.TabIndex = 82;
+            this.dessertComboList.SelectedIndexChanged += new System.EventHandler(this.dessertComboList_SelectedIndexChanged);
+            // 
+            // label118
+            // 
+            this.label118.AutoSize = true;
+            this.label118.Location = new System.Drawing.Point(233, 426);
+            this.label118.Name = "label118";
+            this.label118.Size = new System.Drawing.Size(49, 20);
+            this.label118.TabIndex = 81;
+            this.label118.Text = "Items";
             // 
             // categoryBox3
             // 
@@ -1208,8 +1766,127 @@ namespace Restaurant_Management_System
             this.label82.TabIndex = 55;
             this.label82.Text = "Waffles";
             // 
+            // pictureBox32
+            // 
+            this.pictureBox32.Image = global::Restaurant_Management_System.Properties.Resources.classic_cannoli;
+            this.pictureBox32.Location = new System.Drawing.Point(903, 228);
+            this.pictureBox32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox32.Name = "pictureBox32";
+            this.pictureBox32.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox32.TabIndex = 62;
+            this.pictureBox32.TabStop = false;
+            // 
+            // pictureBox33
+            // 
+            this.pictureBox33.Image = global::Restaurant_Management_System.Properties.Resources.nut_truffle;
+            this.pictureBox33.Location = new System.Drawing.Point(683, 228);
+            this.pictureBox33.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox33.Name = "pictureBox33";
+            this.pictureBox33.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox33.TabIndex = 61;
+            this.pictureBox33.TabStop = false;
+            // 
+            // pictureBox34
+            // 
+            this.pictureBox34.Image = global::Restaurant_Management_System.Properties.Resources.caramelappletart;
+            this.pictureBox34.Location = new System.Drawing.Point(461, 228);
+            this.pictureBox34.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox34.Name = "pictureBox34";
+            this.pictureBox34.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox34.TabIndex = 60;
+            this.pictureBox34.TabStop = false;
+            // 
+            // pictureBox35
+            // 
+            this.pictureBox35.Image = global::Restaurant_Management_System.Properties.Resources.waffles;
+            this.pictureBox35.Location = new System.Drawing.Point(241, 228);
+            this.pictureBox35.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox35.Name = "pictureBox35";
+            this.pictureBox35.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox35.TabIndex = 59;
+            this.pictureBox35.TabStop = false;
+            // 
+            // pictureBox36
+            // 
+            this.pictureBox36.Image = global::Restaurant_Management_System.Properties.Resources.friedicecream;
+            this.pictureBox36.Location = new System.Drawing.Point(28, 228);
+            this.pictureBox36.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox36.Name = "pictureBox36";
+            this.pictureBox36.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox36.TabIndex = 54;
+            this.pictureBox36.TabStop = false;
+            // 
+            // pictureBox37
+            // 
+            this.pictureBox37.Image = global::Restaurant_Management_System.Properties.Resources.brownies;
+            this.pictureBox37.Location = new System.Drawing.Point(903, 32);
+            this.pictureBox37.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox37.Name = "pictureBox37";
+            this.pictureBox37.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox37.TabIndex = 53;
+            this.pictureBox37.TabStop = false;
+            // 
+            // pictureBox38
+            // 
+            this.pictureBox38.Image = global::Restaurant_Management_System.Properties.Resources.chocolate;
+            this.pictureBox38.Location = new System.Drawing.Point(682, 32);
+            this.pictureBox38.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox38.Name = "pictureBox38";
+            this.pictureBox38.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox38.TabIndex = 52;
+            this.pictureBox38.TabStop = false;
+            // 
+            // pictureBox39
+            // 
+            this.pictureBox39.Image = global::Restaurant_Management_System.Properties.Resources.cheesecake;
+            this.pictureBox39.Location = new System.Drawing.Point(461, 32);
+            this.pictureBox39.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox39.Name = "pictureBox39";
+            this.pictureBox39.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox39.TabIndex = 51;
+            this.pictureBox39.TabStop = false;
+            // 
+            // pictureBox40
+            // 
+            this.pictureBox40.Image = global::Restaurant_Management_System.Properties.Resources.cake;
+            this.pictureBox40.Location = new System.Drawing.Point(240, 32);
+            this.pictureBox40.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox40.Name = "pictureBox40";
+            this.pictureBox40.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox40.TabIndex = 50;
+            this.pictureBox40.TabStop = false;
+            // 
+            // pictureBox41
+            // 
+            this.pictureBox41.Image = global::Restaurant_Management_System.Properties.Resources.lavacake;
+            this.pictureBox41.Location = new System.Drawing.Point(28, 32);
+            this.pictureBox41.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox41.Name = "pictureBox41";
+            this.pictureBox41.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox41.TabIndex = 49;
+            this.pictureBox41.TabStop = false;
+            // 
             // coldDrinks
             // 
+            this.coldDrinks.Controls.Add(this.addDrinksToCart);
+            this.coldDrinks.Controls.Add(this.coldDrinkTotalPrice);
+            this.coldDrinks.Controls.Add(this.label119);
+            this.coldDrinks.Controls.Add(this.coldDrinkUnitPrice);
+            this.coldDrinks.Controls.Add(this.label120);
+            this.coldDrinks.Controls.Add(this.label121);
+            this.coldDrinks.Controls.Add(this.coldDrinkQuantity);
+            this.coldDrinks.Controls.Add(this.coldDrinkItems);
+            this.coldDrinks.Controls.Add(this.label122);
             this.coldDrinks.Controls.Add(this.categoryBox4);
             this.coldDrinks.Controls.Add(this.label105);
             this.coldDrinks.Controls.Add(this.label23);
@@ -1249,6 +1926,102 @@ namespace Restaurant_Management_System
             this.coldDrinks.TabIndex = 3;
             this.coldDrinks.Text = "Cold Drinks";
             this.coldDrinks.UseVisualStyleBackColor = true;
+            // 
+            // addDrinksToCart
+            // 
+            this.addDrinksToCart.BackColor = System.Drawing.Color.DarkOrange;
+            this.addDrinksToCart.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.addDrinksToCart.FlatAppearance.BorderSize = 0;
+            this.addDrinksToCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addDrinksToCart.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addDrinksToCart.ForeColor = System.Drawing.Color.White;
+            this.addDrinksToCart.Location = new System.Drawing.Point(886, 413);
+            this.addDrinksToCart.Name = "addDrinksToCart";
+            this.addDrinksToCart.Size = new System.Drawing.Size(212, 46);
+            this.addDrinksToCart.TabIndex = 61;
+            this.addDrinksToCart.Text = "Add To Cart";
+            this.addDrinksToCart.UseVisualStyleBackColor = false;
+            this.addDrinksToCart.Click += new System.EventHandler(this.addDrinksToCart_Click);
+            // 
+            // coldDrinkTotalPrice
+            // 
+            this.coldDrinkTotalPrice.Location = new System.Drawing.Point(788, 423);
+            this.coldDrinkTotalPrice.Name = "coldDrinkTotalPrice";
+            this.coldDrinkTotalPrice.ReadOnly = true;
+            this.coldDrinkTotalPrice.Size = new System.Drawing.Size(75, 26);
+            this.coldDrinkTotalPrice.TabIndex = 59;
+            // 
+            // label119
+            // 
+            this.label119.AutoSize = true;
+            this.label119.Location = new System.Drawing.Point(704, 426);
+            this.label119.Name = "label119";
+            this.label119.Size = new System.Drawing.Size(83, 20);
+            this.label119.TabIndex = 57;
+            this.label119.Text = "Total Price";
+            // 
+            // coldDrinkUnitPrice
+            // 
+            this.coldDrinkUnitPrice.Location = new System.Drawing.Point(637, 423);
+            this.coldDrinkUnitPrice.Name = "coldDrinkUnitPrice";
+            this.coldDrinkUnitPrice.ReadOnly = true;
+            this.coldDrinkUnitPrice.Size = new System.Drawing.Size(59, 26);
+            this.coldDrinkUnitPrice.TabIndex = 60;
+            // 
+            // label120
+            // 
+            this.label120.AutoSize = true;
+            this.label120.Location = new System.Drawing.Point(558, 426);
+            this.label120.Name = "label120";
+            this.label120.Size = new System.Drawing.Size(77, 20);
+            this.label120.TabIndex = 58;
+            this.label120.Text = "Unit Price";
+            // 
+            // label121
+            // 
+            this.label121.AutoSize = true;
+            this.label121.Location = new System.Drawing.Point(418, 426);
+            this.label121.Name = "label121";
+            this.label121.Size = new System.Drawing.Size(68, 20);
+            this.label121.TabIndex = 56;
+            this.label121.Text = "Quantity";
+            // 
+            // coldDrinkQuantity
+            // 
+            this.coldDrinkQuantity.Location = new System.Drawing.Point(487, 423);
+            this.coldDrinkQuantity.Name = "coldDrinkQuantity";
+            this.coldDrinkQuantity.Size = new System.Drawing.Size(65, 26);
+            this.coldDrinkQuantity.TabIndex = 55;
+            this.coldDrinkQuantity.ValueChanged += new System.EventHandler(this.coldDrinkQuantity_ValueChanged);
+            // 
+            // coldDrinkItems
+            // 
+            this.coldDrinkItems.FormattingEnabled = true;
+            this.coldDrinkItems.Items.AddRange(new object[] {
+            "CocaCola",
+            "Fanta",
+            "Mountain-Dew",
+            "Milk-Shake",
+            "Lemonade",
+            "Soda",
+            "Ice-Tea",
+            "Pepsi",
+            "Apple-Juice",
+            "Mango-Juice"});
+            this.coldDrinkItems.Location = new System.Drawing.Point(283, 423);
+            this.coldDrinkItems.Name = "coldDrinkItems";
+            this.coldDrinkItems.Size = new System.Drawing.Size(127, 28);
+            this.coldDrinkItems.TabIndex = 54;
+            this.coldDrinkItems.SelectedIndexChanged += new System.EventHandler(this.coldDrinkItems_SelectedIndexChanged);
+            // 
+            // label122
+            // 
+            this.label122.AutoSize = true;
+            this.label122.Location = new System.Drawing.Point(237, 426);
+            this.label122.Name = "label122";
+            this.label122.Size = new System.Drawing.Size(49, 20);
+            this.label122.TabIndex = 53;
+            this.label122.Text = "Items";
             // 
             // categoryBox4
             // 
@@ -1487,8 +2260,127 @@ namespace Restaurant_Management_System
             this.label42.TabIndex = 22;
             this.label42.Text = "CocaCola";
             // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::Restaurant_Management_System.Properties.Resources.mango_juice;
+            this.pictureBox12.Location = new System.Drawing.Point(908, 228);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 36;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::Restaurant_Management_System.Properties.Resources.apple_juice;
+            this.pictureBox13.Location = new System.Drawing.Point(687, 228);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 35;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::Restaurant_Management_System.Properties.Resources.pepsi;
+            this.pictureBox14.Location = new System.Drawing.Point(466, 228);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox14.TabIndex = 34;
+            this.pictureBox14.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::Restaurant_Management_System.Properties.Resources.ice_tea;
+            this.pictureBox15.Location = new System.Drawing.Point(245, 228);
+            this.pictureBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox15.TabIndex = 33;
+            this.pictureBox15.TabStop = false;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::Restaurant_Management_System.Properties.Resources.soda;
+            this.pictureBox16.Location = new System.Drawing.Point(28, 228);
+            this.pictureBox16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox16.TabIndex = 27;
+            this.pictureBox16.TabStop = false;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Image = global::Restaurant_Management_System.Properties.Resources.lemonade;
+            this.pictureBox17.Location = new System.Drawing.Point(908, 32);
+            this.pictureBox17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox17.TabIndex = 26;
+            this.pictureBox17.TabStop = false;
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Image = global::Restaurant_Management_System.Properties.Resources.milk_shake;
+            this.pictureBox18.Location = new System.Drawing.Point(687, 32);
+            this.pictureBox18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox18.TabIndex = 25;
+            this.pictureBox18.TabStop = false;
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.Image = global::Restaurant_Management_System.Properties.Resources.mountain_dew;
+            this.pictureBox19.Location = new System.Drawing.Point(465, 32);
+            this.pictureBox19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox19.TabIndex = 24;
+            this.pictureBox19.TabStop = false;
+            // 
+            // pictureBox20
+            // 
+            this.pictureBox20.Image = global::Restaurant_Management_System.Properties.Resources.fanta;
+            this.pictureBox20.Location = new System.Drawing.Point(245, 32);
+            this.pictureBox20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox20.TabIndex = 23;
+            this.pictureBox20.TabStop = false;
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.Image = global::Restaurant_Management_System.Properties.Resources.cocacola;
+            this.pictureBox21.Location = new System.Drawing.Point(28, 32);
+            this.pictureBox21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox21.TabIndex = 21;
+            this.pictureBox21.TabStop = false;
+            // 
             // beverages
             // 
+            this.beverages.Controls.Add(this.addBeverageToCart);
+            this.beverages.Controls.Add(this.beverageTotalPrice);
+            this.beverages.Controls.Add(this.label123);
+            this.beverages.Controls.Add(this.beverageUnitPrice);
+            this.beverages.Controls.Add(this.label124);
+            this.beverages.Controls.Add(this.label125);
+            this.beverages.Controls.Add(this.beverageQuantity);
+            this.beverages.Controls.Add(this.beverageItems);
+            this.beverages.Controls.Add(this.label126);
             this.beverages.Controls.Add(this.categoryBox5);
             this.beverages.Controls.Add(this.label106);
             this.beverages.Controls.Add(this.label83);
@@ -1529,6 +2421,102 @@ namespace Restaurant_Management_System
             this.beverages.Text = "Beverages";
             this.beverages.UseVisualStyleBackColor = true;
             this.beverages.Click += new System.EventHandler(this.tabPage5_Click);
+            // 
+            // addBeverageToCart
+            // 
+            this.addBeverageToCart.BackColor = System.Drawing.Color.DarkOrange;
+            this.addBeverageToCart.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.addBeverageToCart.FlatAppearance.BorderSize = 0;
+            this.addBeverageToCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addBeverageToCart.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addBeverageToCart.ForeColor = System.Drawing.Color.White;
+            this.addBeverageToCart.Location = new System.Drawing.Point(883, 413);
+            this.addBeverageToCart.Name = "addBeverageToCart";
+            this.addBeverageToCart.Size = new System.Drawing.Size(212, 46);
+            this.addBeverageToCart.TabIndex = 119;
+            this.addBeverageToCart.Text = "Add To Cart";
+            this.addBeverageToCart.UseVisualStyleBackColor = false;
+            this.addBeverageToCart.Click += new System.EventHandler(this.addBeverageToCart_Click);
+            // 
+            // beverageTotalPrice
+            // 
+            this.beverageTotalPrice.Location = new System.Drawing.Point(785, 423);
+            this.beverageTotalPrice.Name = "beverageTotalPrice";
+            this.beverageTotalPrice.ReadOnly = true;
+            this.beverageTotalPrice.Size = new System.Drawing.Size(75, 26);
+            this.beverageTotalPrice.TabIndex = 117;
+            // 
+            // label123
+            // 
+            this.label123.AutoSize = true;
+            this.label123.Location = new System.Drawing.Point(701, 426);
+            this.label123.Name = "label123";
+            this.label123.Size = new System.Drawing.Size(83, 20);
+            this.label123.TabIndex = 115;
+            this.label123.Text = "Total Price";
+            // 
+            // beverageUnitPrice
+            // 
+            this.beverageUnitPrice.Location = new System.Drawing.Point(634, 423);
+            this.beverageUnitPrice.Name = "beverageUnitPrice";
+            this.beverageUnitPrice.ReadOnly = true;
+            this.beverageUnitPrice.Size = new System.Drawing.Size(59, 26);
+            this.beverageUnitPrice.TabIndex = 118;
+            // 
+            // label124
+            // 
+            this.label124.AutoSize = true;
+            this.label124.Location = new System.Drawing.Point(555, 426);
+            this.label124.Name = "label124";
+            this.label124.Size = new System.Drawing.Size(77, 20);
+            this.label124.TabIndex = 116;
+            this.label124.Text = "Unit Price";
+            // 
+            // label125
+            // 
+            this.label125.AutoSize = true;
+            this.label125.Location = new System.Drawing.Point(415, 426);
+            this.label125.Name = "label125";
+            this.label125.Size = new System.Drawing.Size(68, 20);
+            this.label125.TabIndex = 114;
+            this.label125.Text = "Quantity";
+            // 
+            // beverageQuantity
+            // 
+            this.beverageQuantity.Location = new System.Drawing.Point(484, 423);
+            this.beverageQuantity.Name = "beverageQuantity";
+            this.beverageQuantity.Size = new System.Drawing.Size(65, 26);
+            this.beverageQuantity.TabIndex = 113;
+            this.beverageQuantity.ValueChanged += new System.EventHandler(this.beverageQuantity_ValueChanged);
+            // 
+            // beverageItems
+            // 
+            this.beverageItems.FormattingEnabled = true;
+            this.beverageItems.Items.AddRange(new object[] {
+            "Pink Lady",
+            "Cuba Libre",
+            "Whiskey Sour",
+            "Old Fashioned",
+            "Bloody Mary",
+            "Mint Julep",
+            "Frozen Daiquiri",
+            "Vodka Gimlet",
+            "Planter\'s Punch",
+            "Sweet Mimosa"});
+            this.beverageItems.Location = new System.Drawing.Point(282, 421);
+            this.beverageItems.Name = "beverageItems";
+            this.beverageItems.Size = new System.Drawing.Size(127, 28);
+            this.beverageItems.TabIndex = 112;
+            this.beverageItems.SelectedIndexChanged += new System.EventHandler(this.beverageItems_SelectedIndexChanged);
+            // 
+            // label126
+            // 
+            this.label126.AutoSize = true;
+            this.label126.Location = new System.Drawing.Point(234, 426);
+            this.label126.Name = "label126";
+            this.label126.Size = new System.Drawing.Size(49, 20);
+            this.label126.TabIndex = 111;
+            this.label126.Text = "Items";
             // 
             // categoryBox5
             // 
@@ -1777,6 +2765,116 @@ namespace Restaurant_Management_System
             this.label102.Text = "Frozen Daiquiri";
             this.label102.Click += new System.EventHandler(this.label102_Click);
             // 
+            // pictureBox42
+            // 
+            this.pictureBox42.Image = global::Restaurant_Management_System.Properties.Resources.sweet_mimosa;
+            this.pictureBox42.Location = new System.Drawing.Point(907, 228);
+            this.pictureBox42.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox42.Name = "pictureBox42";
+            this.pictureBox42.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox42.TabIndex = 92;
+            this.pictureBox42.TabStop = false;
+            // 
+            // pictureBox43
+            // 
+            this.pictureBox43.Image = global::Restaurant_Management_System.Properties.Resources.planter_s_punch;
+            this.pictureBox43.Location = new System.Drawing.Point(686, 228);
+            this.pictureBox43.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox43.Name = "pictureBox43";
+            this.pictureBox43.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox43.TabIndex = 91;
+            this.pictureBox43.TabStop = false;
+            // 
+            // pictureBox44
+            // 
+            this.pictureBox44.Image = global::Restaurant_Management_System.Properties.Resources.vodka_gimlet;
+            this.pictureBox44.Location = new System.Drawing.Point(465, 228);
+            this.pictureBox44.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox44.Name = "pictureBox44";
+            this.pictureBox44.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox44.TabIndex = 90;
+            this.pictureBox44.TabStop = false;
+            // 
+            // pictureBox45
+            // 
+            this.pictureBox45.Image = global::Restaurant_Management_System.Properties.Resources.frozen_daiquiri;
+            this.pictureBox45.Location = new System.Drawing.Point(244, 228);
+            this.pictureBox45.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox45.Name = "pictureBox45";
+            this.pictureBox45.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox45.TabIndex = 89;
+            this.pictureBox45.TabStop = false;
+            // 
+            // pictureBox46
+            // 
+            this.pictureBox46.Image = global::Restaurant_Management_System.Properties.Resources.mink_julep;
+            this.pictureBox46.Location = new System.Drawing.Point(28, 228);
+            this.pictureBox46.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox46.Name = "pictureBox46";
+            this.pictureBox46.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox46.TabIndex = 84;
+            this.pictureBox46.TabStop = false;
+            // 
+            // pictureBox47
+            // 
+            this.pictureBox47.Image = global::Restaurant_Management_System.Properties.Resources.bloody_mary;
+            this.pictureBox47.Location = new System.Drawing.Point(908, 32);
+            this.pictureBox47.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox47.Name = "pictureBox47";
+            this.pictureBox47.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox47.TabIndex = 83;
+            this.pictureBox47.TabStop = false;
+            // 
+            // pictureBox48
+            // 
+            this.pictureBox48.Image = global::Restaurant_Management_System.Properties.Resources.old_fashioned;
+            this.pictureBox48.Location = new System.Drawing.Point(688, 32);
+            this.pictureBox48.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox48.Name = "pictureBox48";
+            this.pictureBox48.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox48.TabIndex = 82;
+            this.pictureBox48.TabStop = false;
+            // 
+            // pictureBox49
+            // 
+            this.pictureBox49.Image = global::Restaurant_Management_System.Properties.Resources.whiskey_sour;
+            this.pictureBox49.Location = new System.Drawing.Point(464, 32);
+            this.pictureBox49.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox49.Name = "pictureBox49";
+            this.pictureBox49.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox49.TabIndex = 81;
+            this.pictureBox49.TabStop = false;
+            // 
+            // pictureBox50
+            // 
+            this.pictureBox50.Image = global::Restaurant_Management_System.Properties.Resources.cuba_libre;
+            this.pictureBox50.Location = new System.Drawing.Point(244, 32);
+            this.pictureBox50.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox50.Name = "pictureBox50";
+            this.pictureBox50.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox50.TabIndex = 80;
+            this.pictureBox50.TabStop = false;
+            // 
+            // pictureBox51
+            // 
+            this.pictureBox51.Image = global::Restaurant_Management_System.Properties.Resources.pink_lady;
+            this.pictureBox51.Location = new System.Drawing.Point(28, 32);
+            this.pictureBox51.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox51.Name = "pictureBox51";
+            this.pictureBox51.Size = new System.Drawing.Size(186, 100);
+            this.pictureBox51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox51.TabIndex = 79;
+            this.pictureBox51.TabStop = false;
+            // 
             // res_tab
             // 
             this.res_tab.Location = new System.Drawing.Point(4, 29);
@@ -1790,6 +2888,11 @@ namespace Restaurant_Management_System
             // 
             // payment
             // 
+            this.payment.Controls.Add(this.grandTotalLabel);
+            this.payment.Controls.Add(this.grandTotalTxt);
+            this.payment.Controls.Add(this.printBtn);
+            this.payment.Controls.Add(this.removeBtn);
+            this.payment.Controls.Add(this.dataGridView1);
             this.payment.Location = new System.Drawing.Point(4, 29);
             this.payment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.payment.Name = "payment";
@@ -1798,6 +2901,167 @@ namespace Restaurant_Management_System
             this.payment.TabIndex = 2;
             this.payment.Text = "Customers Billing";
             this.payment.UseVisualStyleBackColor = true;
+            // 
+            // grandTotalLabel
+            // 
+            this.grandTotalLabel.BackColor = System.Drawing.Color.LightCoral;
+            this.grandTotalLabel.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grandTotalLabel.Location = new System.Drawing.Point(493, 390);
+            this.grandTotalLabel.Name = "grandTotalLabel";
+            this.grandTotalLabel.Size = new System.Drawing.Size(162, 52);
+            this.grandTotalLabel.TabIndex = 3;
+            this.grandTotalLabel.Text = "Rs. 00";
+            this.grandTotalLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // grandTotalTxt
+            // 
+            this.grandTotalTxt.AutoSize = true;
+            this.grandTotalTxt.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grandTotalTxt.ForeColor = System.Drawing.Color.DarkOrange;
+            this.grandTotalTxt.Location = new System.Drawing.Point(499, 353);
+            this.grandTotalTxt.Name = "grandTotalTxt";
+            this.grandTotalTxt.Size = new System.Drawing.Size(142, 26);
+            this.grandTotalTxt.TabIndex = 2;
+            this.grandTotalTxt.Text = "Grand Total";
+            // 
+            // printBtn
+            // 
+            this.printBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.printBtn.BackColor = System.Drawing.Color.DarkOrange;
+            this.printBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.printBtn.FlatAppearance.BorderSize = 0;
+            this.printBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.printBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.printBtn.Location = new System.Drawing.Point(763, 390);
+            this.printBtn.Name = "printBtn";
+            this.printBtn.Padding = new System.Windows.Forms.Padding(1);
+            this.printBtn.Size = new System.Drawing.Size(157, 52);
+            this.printBtn.TabIndex = 1;
+            this.printBtn.Text = "Print";
+            this.printBtn.UseVisualStyleBackColor = false;
+            // 
+            // removeBtn
+            // 
+            this.removeBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.removeBtn.BackColor = System.Drawing.Color.DarkOrange;
+            this.removeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.removeBtn.FlatAppearance.BorderSize = 0;
+            this.removeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.removeBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.removeBtn.Location = new System.Drawing.Point(220, 390);
+            this.removeBtn.Name = "removeBtn";
+            this.removeBtn.Padding = new System.Windows.Forms.Padding(1);
+            this.removeBtn.Size = new System.Drawing.Size(157, 52);
+            this.removeBtn.TabIndex = 1;
+            this.removeBtn.Text = "Remove";
+            this.removeBtn.UseVisualStyleBackColor = false;
+            this.removeBtn.Click += new System.EventHandler(this.removeBtn_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ScrollBar;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridView1.ColumnHeadersHeight = 32;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id,
+            this.categoryColumn,
+            this.ItemColumn,
+            this.quantityColumn,
+            this.unitpriceColumn,
+            this.totalpriceColumn});
+            this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.ScrollBar;
+            this.dataGridView1.Location = new System.Drawing.Point(11, 94);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.RowTemplate.Height = 28;
+            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(1095, 234);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // id
+            // 
+            this.id.HeaderText = "id";
+            this.id.MinimumWidth = 8;
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Visible = false;
+            // 
+            // categoryColumn
+            // 
+            this.categoryColumn.HeaderText = "Category";
+            this.categoryColumn.MinimumWidth = 8;
+            this.categoryColumn.Name = "categoryColumn";
+            this.categoryColumn.ReadOnly = true;
+            // 
+            // ItemColumn
+            // 
+            this.ItemColumn.HeaderText = "Item";
+            this.ItemColumn.MinimumWidth = 8;
+            this.ItemColumn.Name = "ItemColumn";
+            this.ItemColumn.ReadOnly = true;
+            // 
+            // quantityColumn
+            // 
+            this.quantityColumn.HeaderText = "Quantity";
+            this.quantityColumn.MinimumWidth = 8;
+            this.quantityColumn.Name = "quantityColumn";
+            this.quantityColumn.ReadOnly = true;
+            // 
+            // unitpriceColumn
+            // 
+            this.unitpriceColumn.HeaderText = "Unit Price";
+            this.unitpriceColumn.MinimumWidth = 8;
+            this.unitpriceColumn.Name = "unitpriceColumn";
+            this.unitpriceColumn.ReadOnly = true;
+            // 
+            // totalpriceColumn
+            // 
+            this.totalpriceColumn.HeaderText = "Total Price";
+            this.totalpriceColumn.MinimumWidth = 8;
+            this.totalpriceColumn.Name = "totalpriceColumn";
+            this.totalpriceColumn.ReadOnly = true;
             // 
             // customer_log
             // 
@@ -1844,7 +3108,7 @@ namespace Restaurant_Management_System
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, 656);
+            this.panel1.Location = new System.Drawing.Point(0, 665);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1128, 52);
@@ -1874,7 +3138,7 @@ namespace Restaurant_Management_System
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Restaurant_Management_System.Properties.Resources.park_modified11;
-            this.pictureBox1.Location = new System.Drawing.Point(4, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(4, 9);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(54, 50);
@@ -1882,588 +3146,27 @@ namespace Restaurant_Management_System
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::Restaurant_Management_System.Properties.Resources.ham_biscuits;
-            this.pictureBox7.Location = new System.Drawing.Point(909, 228);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 11;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::Restaurant_Management_System.Properties.Resources.bear_claw;
-            this.pictureBox8.Location = new System.Drawing.Point(688, 228);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 10;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::Restaurant_Management_System.Properties.Resources.clam_cakes;
-            this.pictureBox9.Location = new System.Drawing.Point(467, 228);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 9;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::Restaurant_Management_System.Properties.Resources.bacon;
-            this.pictureBox10.Location = new System.Drawing.Point(246, 228);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 8;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::Restaurant_Management_System.Properties.Resources.chocolate_chips;
-            this.pictureBox11.Location = new System.Drawing.Point(28, 228);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 6;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::Restaurant_Management_System.Properties.Resources.bake_and_shark;
-            this.pictureBox6.Location = new System.Drawing.Point(909, 32);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Restaurant_Management_System.Properties.Resources.oreos;
-            this.pictureBox5.Location = new System.Drawing.Point(688, 32);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Restaurant_Management_System.Properties.Resources.devil_eggs;
-            this.pictureBox4.Location = new System.Drawing.Point(467, 32);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Restaurant_Management_System.Properties.Resources.club_sandwich_recipe;
-            this.pictureBox3.Location = new System.Drawing.Point(246, 32);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Restaurant_Management_System.Properties.Resources._54659021;
-            this.pictureBox2.Location = new System.Drawing.Point(28, 32);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox22
-            // 
-            this.pictureBox22.Location = new System.Drawing.Point(909, 228);
-            this.pictureBox22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox22.TabIndex = 34;
-            this.pictureBox22.TabStop = false;
-            // 
-            // pictureBox23
-            // 
-            this.pictureBox23.Location = new System.Drawing.Point(688, 228);
-            this.pictureBox23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox23.TabIndex = 33;
-            this.pictureBox23.TabStop = false;
-            // 
-            // pictureBox24
-            // 
-            this.pictureBox24.Location = new System.Drawing.Point(467, 228);
-            this.pictureBox24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox24.TabIndex = 32;
-            this.pictureBox24.TabStop = false;
-            // 
-            // pictureBox25
-            // 
-            this.pictureBox25.Location = new System.Drawing.Point(246, 228);
-            this.pictureBox25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox25.TabIndex = 31;
-            this.pictureBox25.TabStop = false;
-            // 
-            // pictureBox26
-            // 
-            this.pictureBox26.Location = new System.Drawing.Point(28, 228);
-            this.pictureBox26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox26.TabIndex = 26;
-            this.pictureBox26.TabStop = false;
-            // 
-            // pictureBox27
-            // 
-            this.pictureBox27.Location = new System.Drawing.Point(909, 32);
-            this.pictureBox27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox27.TabIndex = 25;
-            this.pictureBox27.TabStop = false;
-            // 
-            // pictureBox28
-            // 
-            this.pictureBox28.Location = new System.Drawing.Point(688, 32);
-            this.pictureBox28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox28.TabIndex = 24;
-            this.pictureBox28.TabStop = false;
-            // 
-            // pictureBox29
-            // 
-            this.pictureBox29.Location = new System.Drawing.Point(467, 32);
-            this.pictureBox29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox29.TabIndex = 23;
-            this.pictureBox29.TabStop = false;
-            // 
-            // pictureBox30
-            // 
-            this.pictureBox30.Location = new System.Drawing.Point(246, 32);
-            this.pictureBox30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox30.TabIndex = 22;
-            this.pictureBox30.TabStop = false;
-            // 
-            // pictureBox31
-            // 
-            this.pictureBox31.Location = new System.Drawing.Point(28, 32);
-            this.pictureBox31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox31.TabIndex = 21;
-            this.pictureBox31.TabStop = false;
-            // 
-            // pictureBox32
-            // 
-            this.pictureBox32.Location = new System.Drawing.Point(903, 228);
-            this.pictureBox32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox32.TabIndex = 62;
-            this.pictureBox32.TabStop = false;
-            // 
-            // pictureBox33
-            // 
-            this.pictureBox33.Location = new System.Drawing.Point(683, 228);
-            this.pictureBox33.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox33.Name = "pictureBox33";
-            this.pictureBox33.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox33.TabIndex = 61;
-            this.pictureBox33.TabStop = false;
-            // 
-            // pictureBox34
-            // 
-            this.pictureBox34.Location = new System.Drawing.Point(461, 228);
-            this.pictureBox34.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox34.TabIndex = 60;
-            this.pictureBox34.TabStop = false;
-            // 
-            // pictureBox35
-            // 
-            this.pictureBox35.Location = new System.Drawing.Point(241, 228);
-            this.pictureBox35.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox35.Name = "pictureBox35";
-            this.pictureBox35.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox35.TabIndex = 59;
-            this.pictureBox35.TabStop = false;
-            // 
-            // pictureBox36
-            // 
-            this.pictureBox36.Location = new System.Drawing.Point(28, 228);
-            this.pictureBox36.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox36.Name = "pictureBox36";
-            this.pictureBox36.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox36.TabIndex = 54;
-            this.pictureBox36.TabStop = false;
-            // 
-            // pictureBox37
-            // 
-            this.pictureBox37.Location = new System.Drawing.Point(903, 32);
-            this.pictureBox37.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox37.Name = "pictureBox37";
-            this.pictureBox37.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox37.TabIndex = 53;
-            this.pictureBox37.TabStop = false;
-            // 
-            // pictureBox38
-            // 
-            this.pictureBox38.Location = new System.Drawing.Point(682, 32);
-            this.pictureBox38.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox38.Name = "pictureBox38";
-            this.pictureBox38.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox38.TabIndex = 52;
-            this.pictureBox38.TabStop = false;
-            // 
-            // pictureBox39
-            // 
-            this.pictureBox39.Location = new System.Drawing.Point(461, 32);
-            this.pictureBox39.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox39.Name = "pictureBox39";
-            this.pictureBox39.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox39.TabIndex = 51;
-            this.pictureBox39.TabStop = false;
-            // 
-            // pictureBox40
-            // 
-            this.pictureBox40.Location = new System.Drawing.Point(240, 32);
-            this.pictureBox40.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox40.Name = "pictureBox40";
-            this.pictureBox40.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox40.TabIndex = 50;
-            this.pictureBox40.TabStop = false;
-            // 
-            // pictureBox41
-            // 
-            this.pictureBox41.Location = new System.Drawing.Point(28, 32);
-            this.pictureBox41.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox41.Name = "pictureBox41";
-            this.pictureBox41.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox41.TabIndex = 49;
-            this.pictureBox41.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Location = new System.Drawing.Point(908, 228);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 36;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Location = new System.Drawing.Point(687, 228);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox13.TabIndex = 35;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.Location = new System.Drawing.Point(466, 228);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox14.TabIndex = 34;
-            this.pictureBox14.TabStop = false;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Location = new System.Drawing.Point(245, 228);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox15.TabIndex = 33;
-            this.pictureBox15.TabStop = false;
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Location = new System.Drawing.Point(28, 228);
-            this.pictureBox16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox16.TabIndex = 27;
-            this.pictureBox16.TabStop = false;
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.Location = new System.Drawing.Point(908, 32);
-            this.pictureBox17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox17.TabIndex = 26;
-            this.pictureBox17.TabStop = false;
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.Location = new System.Drawing.Point(687, 32);
-            this.pictureBox18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox18.TabIndex = 25;
-            this.pictureBox18.TabStop = false;
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.Location = new System.Drawing.Point(465, 32);
-            this.pictureBox19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox19.TabIndex = 24;
-            this.pictureBox19.TabStop = false;
-            // 
-            // pictureBox20
-            // 
-            this.pictureBox20.Location = new System.Drawing.Point(245, 32);
-            this.pictureBox20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox20.TabIndex = 23;
-            this.pictureBox20.TabStop = false;
-            // 
-            // pictureBox21
-            // 
-            this.pictureBox21.Location = new System.Drawing.Point(28, 32);
-            this.pictureBox21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox21.TabIndex = 21;
-            this.pictureBox21.TabStop = false;
-            // 
-            // pictureBox42
-            // 
-            this.pictureBox42.Location = new System.Drawing.Point(907, 228);
-            this.pictureBox42.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox42.Name = "pictureBox42";
-            this.pictureBox42.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox42.TabIndex = 92;
-            this.pictureBox42.TabStop = false;
-            // 
-            // pictureBox43
-            // 
-            this.pictureBox43.Location = new System.Drawing.Point(686, 228);
-            this.pictureBox43.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox43.Name = "pictureBox43";
-            this.pictureBox43.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox43.TabIndex = 91;
-            this.pictureBox43.TabStop = false;
-            // 
-            // pictureBox44
-            // 
-            this.pictureBox44.Location = new System.Drawing.Point(465, 228);
-            this.pictureBox44.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox44.Name = "pictureBox44";
-            this.pictureBox44.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox44.TabIndex = 90;
-            this.pictureBox44.TabStop = false;
-            // 
-            // pictureBox45
-            // 
-            this.pictureBox45.Location = new System.Drawing.Point(244, 228);
-            this.pictureBox45.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox45.Name = "pictureBox45";
-            this.pictureBox45.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox45.TabIndex = 89;
-            this.pictureBox45.TabStop = false;
-            // 
-            // pictureBox46
-            // 
-            this.pictureBox46.Location = new System.Drawing.Point(28, 228);
-            this.pictureBox46.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox46.Name = "pictureBox46";
-            this.pictureBox46.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox46.TabIndex = 84;
-            this.pictureBox46.TabStop = false;
-            // 
-            // pictureBox47
-            // 
-            this.pictureBox47.Location = new System.Drawing.Point(908, 32);
-            this.pictureBox47.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox47.Name = "pictureBox47";
-            this.pictureBox47.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox47.TabIndex = 83;
-            this.pictureBox47.TabStop = false;
-            // 
-            // pictureBox48
-            // 
-            this.pictureBox48.Location = new System.Drawing.Point(688, 32);
-            this.pictureBox48.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox48.Name = "pictureBox48";
-            this.pictureBox48.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox48.TabIndex = 82;
-            this.pictureBox48.TabStop = false;
-            // 
-            // pictureBox49
-            // 
-            this.pictureBox49.Location = new System.Drawing.Point(464, 32);
-            this.pictureBox49.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox49.Name = "pictureBox49";
-            this.pictureBox49.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox49.TabIndex = 81;
-            this.pictureBox49.TabStop = false;
-            // 
-            // pictureBox50
-            // 
-            this.pictureBox50.Location = new System.Drawing.Point(244, 32);
-            this.pictureBox50.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox50.Name = "pictureBox50";
-            this.pictureBox50.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox50.TabIndex = 80;
-            this.pictureBox50.TabStop = false;
-            // 
-            // pictureBox51
-            // 
-            this.pictureBox51.Location = new System.Drawing.Point(28, 32);
-            this.pictureBox51.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox51.Name = "pictureBox51";
-            this.pictureBox51.Size = new System.Drawing.Size(186, 100);
-            this.pictureBox51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox51.TabIndex = 79;
-            this.pictureBox51.TabStop = false;
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(0, 0);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 26);
-            this.numericUpDown1.TabIndex = 25;
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Location = new System.Drawing.Point(483, 423);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(65, 26);
-            this.numericUpDown2.TabIndex = 26;
-            // 
-            // label108
-            // 
-            this.label108.AutoSize = true;
-            this.label108.Location = new System.Drawing.Point(414, 426);
-            this.label108.Name = "label108";
-            this.label108.Size = new System.Drawing.Size(68, 20);
-            this.label108.TabIndex = 27;
-            this.label108.Text = "Quantity";
-            // 
-            // label109
-            // 
-            this.label109.AutoSize = true;
-            this.label109.Location = new System.Drawing.Point(554, 426);
-            this.label109.Name = "label109";
-            this.label109.Size = new System.Drawing.Size(77, 20);
-            this.label109.TabIndex = 28;
-            this.label109.Text = "Unit Price";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(633, 423);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(59, 26);
-            this.textBox1.TabIndex = 29;
-            // 
-            // label110
-            // 
-            this.label110.AutoSize = true;
-            this.label110.Location = new System.Drawing.Point(700, 426);
-            this.label110.Name = "label110";
-            this.label110.Size = new System.Drawing.Size(83, 20);
-            this.label110.TabIndex = 28;
-            this.label110.Text = "Total Price";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(784, 423);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(75, 26);
-            this.textBox2.TabIndex = 29;
-            // 
-            // addToCart
-            // 
-            this.addToCart.BackColor = System.Drawing.Color.DarkOrange;
-            this.addToCart.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.addToCart.FlatAppearance.BorderSize = 0;
-            this.addToCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addToCart.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addToCart.ForeColor = System.Drawing.Color.White;
-            this.addToCart.Location = new System.Drawing.Point(882, 413);
-            this.addToCart.Name = "addToCart";
-            this.addToCart.Size = new System.Drawing.Size(212, 46);
-            this.addToCart.TabIndex = 30;
-            this.addToCart.Text = "Add To Cart";
-            this.addToCart.UseVisualStyleBackColor = false;
+            // restaurantName
+            // 
+            this.restaurantName.AutoSize = true;
+            this.restaurantName.Font = new System.Drawing.Font("Monotype Corsiva", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.restaurantName.ForeColor = System.Drawing.SystemColors.Control;
+            this.restaurantName.Location = new System.Drawing.Point(62, 6);
+            this.restaurantName.Name = "restaurantName";
+            this.restaurantName.Size = new System.Drawing.Size(307, 34);
+            this.restaurantName.TabIndex = 8;
+            this.restaurantName.Text = "PARK PLACE Restaurant";
+            // 
+            // tagTitle
+            // 
+            this.tagTitle.AutoSize = true;
+            this.tagTitle.Font = new System.Drawing.Font("Lucida Handwriting", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tagTitle.ForeColor = System.Drawing.SystemColors.Control;
+            this.tagTitle.Location = new System.Drawing.Point(64, 35);
+            this.tagTitle.Name = "tagTitle";
+            this.tagTitle.Size = new System.Drawing.Size(162, 21);
+            this.tagTitle.TabIndex = 9;
+            this.tagTitle.Text = "eat.drink.gather";
             // 
             // Form2
             // 
@@ -2471,6 +3174,8 @@ namespace Restaurant_Management_System
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
             this.ClientSize = new System.Drawing.Size(1124, 705);
+            this.Controls.Add(this.tagTitle);
+            this.Controls.Add(this.restaurantName);
             this.Controls.Add(this.btn_min);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -2484,22 +3189,10 @@ namespace Restaurant_Management_System
             this.Text = "Form2";
             this.tabControl1.ResumeLayout(false);
             this.order_tab.ResumeLayout(false);
-            this.tabcontrol2.ResumeLayout(false);
+            this.secondaryTab.ResumeLayout(false);
             this.snacks.ResumeLayout(false);
             this.snacks.PerformLayout();
-            this.mainCourse.ResumeLayout(false);
-            this.mainCourse.PerformLayout();
-            this.dessert.ResumeLayout(false);
-            this.dessert.PerformLayout();
-            this.coldDrinks.ResumeLayout(false);
-            this.coldDrinks.PerformLayout();
-            this.beverages.ResumeLayout(false);
-            this.beverages.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.snackQuantity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
@@ -2510,6 +3203,9 @@ namespace Restaurant_Management_System
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.mainCourse.ResumeLayout(false);
+            this.mainCourse.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mainCourseQuantity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
@@ -2520,6 +3216,9 @@ namespace Restaurant_Management_System
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
+            this.dessert.ResumeLayout(false);
+            this.dessert.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dessertQuantity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
@@ -2530,6 +3229,9 @@ namespace Restaurant_Management_System
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
+            this.coldDrinks.ResumeLayout(false);
+            this.coldDrinks.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.coldDrinkQuantity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
@@ -2540,6 +3242,9 @@ namespace Restaurant_Management_System
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            this.beverages.ResumeLayout(false);
+            this.beverages.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.beverageQuantity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
@@ -2550,9 +3255,16 @@ namespace Restaurant_Management_System
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            this.payment.ResumeLayout(false);
+            this.payment.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -2560,7 +3272,7 @@ namespace Restaurant_Management_System
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage order_tab;
-        private System.Windows.Forms.TabControl tabcontrol2;
+        private System.Windows.Forms.TabControl secondaryTab;
         private System.Windows.Forms.TabPage snacks;
         private System.Windows.Forms.TabPage mainCourse;
         private System.Windows.Forms.TabPage dessert;
@@ -2598,8 +3310,8 @@ namespace Restaurant_Management_System
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label07;
+        private System.Windows.Forms.Label bakeSharklabel;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label16;
@@ -2737,14 +3449,62 @@ namespace Restaurant_Management_System
         private System.Windows.Forms.TextBox categoryBox5;
         private System.Windows.Forms.Label label106;
         private System.Windows.Forms.Label label107;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox snackComboList;
         private System.Windows.Forms.Label label108;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Button addToCart;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.NumericUpDown snackQuantity;
+        private System.Windows.Forms.Button addSnacksToCart;
+        private System.Windows.Forms.TextBox snackTotalPrice;
         private System.Windows.Forms.Label label110;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox snackUnitPrice;
         private System.Windows.Forms.Label label109;
+        private System.Windows.Forms.Button addmainCourseToCart;
+        private System.Windows.Forms.TextBox mainCourseTotalPrice;
+        private System.Windows.Forms.Label label111;
+        private System.Windows.Forms.TextBox mainCourseUnitPrice;
+        private System.Windows.Forms.Label label112;
+        private System.Windows.Forms.Label label113;
+        private System.Windows.Forms.NumericUpDown mainCourseQuantity;
+        private System.Windows.Forms.ComboBox mainCourseComboList;
+        private System.Windows.Forms.Label label114;
+        private System.Windows.Forms.Button addDessertToCart;
+        private System.Windows.Forms.TextBox dessertTotalPrice;
+        private System.Windows.Forms.Label label115;
+        private System.Windows.Forms.TextBox dessertUnitPrice;
+        private System.Windows.Forms.Label label116;
+        private System.Windows.Forms.Label label117;
+        private System.Windows.Forms.NumericUpDown dessertQuantity;
+        private System.Windows.Forms.ComboBox dessertComboList;
+        private System.Windows.Forms.Label label118;
+        private System.Windows.Forms.Button addDrinksToCart;
+        private System.Windows.Forms.TextBox coldDrinkTotalPrice;
+        private System.Windows.Forms.Label label119;
+        private System.Windows.Forms.TextBox coldDrinkUnitPrice;
+        private System.Windows.Forms.Label label120;
+        private System.Windows.Forms.Label label121;
+        private System.Windows.Forms.NumericUpDown coldDrinkQuantity;
+        private System.Windows.Forms.ComboBox coldDrinkItems;
+        private System.Windows.Forms.Label label122;
+        private System.Windows.Forms.Button addBeverageToCart;
+        private System.Windows.Forms.TextBox beverageTotalPrice;
+        private System.Windows.Forms.Label label123;
+        private System.Windows.Forms.TextBox beverageUnitPrice;
+        private System.Windows.Forms.Label label124;
+        private System.Windows.Forms.Label label125;
+        private System.Windows.Forms.NumericUpDown beverageQuantity;
+        private System.Windows.Forms.ComboBox beverageItems;
+        private System.Windows.Forms.Label label126;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoryColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ItemColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantityColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn unitpriceColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn totalpriceColumn;
+        private System.Windows.Forms.Label restaurantName;
+        private System.Windows.Forms.Label tagTitle;
+        private System.Windows.Forms.Label grandTotalLabel;
+        private System.Windows.Forms.Label grandTotalTxt;
+        private System.Windows.Forms.Button printBtn;
+        private System.Windows.Forms.Button removeBtn;
     }
 }

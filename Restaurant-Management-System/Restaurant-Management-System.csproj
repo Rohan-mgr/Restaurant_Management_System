@@ -161,5 +161,125 @@
   <ItemGroup>
     <None Include="Resources\bear claw.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\momo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizza.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chowmein.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burger.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spaghetti.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fry rice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken roast.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biryani.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pork chops.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ham biscuits1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lavacake.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheesecake.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chocolate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brownies.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\friedicecream.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waffles.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caramelappletart.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nut truffle.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\classic cannoli.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cocacola.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fanta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mountain dew.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\milk shake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lemonade.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice tea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pepsi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apple juice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mango juice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pink lady.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuba libre.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whiskey sour.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\old fashioned.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bloody mary.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mink julep.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frozen daiquiri.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vodka gimlet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planter%27s punch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sweet mimosa.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -46,10 +46,6 @@ namespace Restaurant_Management_System
                 sda.Fill(dt);
                 if (dt.Rows.Count > 0)
                 {
-                    // MessageBox.Show("login Successfull");
-                    // nameBox.Clear();
-                    //passwordBox.Clear();
-                    // nameBox.Focus();
                     new Form2().Show();
                     this.Hide();
                 }
