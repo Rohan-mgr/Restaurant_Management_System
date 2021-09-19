@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DGVPrinterHelper;
 
 namespace Restaurant_Management_System
 {
@@ -873,6 +874,31 @@ namespace Restaurant_Management_System
                     connect.Close();
                 }
             }
+        }
+
+        private void printBtn_Click(object sender, EventArgs e)
+        {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Customer Bill";
+            printer.SubTitle = string.Format("Date: {0}", DateTime.Now.Date);
+            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.PorportionalColumns = true;
+            printer.HeaderCellAlignment = StringAlignment.Near;
+            printer.Footer = "Total Payable Amount = " + grandTotalLabel.Text;
+            printer.FooterSpacing = 200;
+            printer.PrintDataGridView(dataGridView1);
+            dataGridView1.Rows.Clear();
+
+            connect.Open();
+            string query = "Delete from orderDetails";
+            SqlCommand cmd = new SqlCommand(query, connect);
+            cmd.ExecuteNonQuery();
+            connect.Close();
+            
+
+            grandTotalLabel.Text = "Rs. 00"; 
         }
     }
 }
