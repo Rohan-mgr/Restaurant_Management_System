@@ -14,7 +14,9 @@ namespace Restaurant_Management_System
 {
     public partial class Form2 : Form
     {
-        SqlConnection connect = new SqlConnection(@"Data Source=LAPTOP-QTLH4POT\SQLEXPRESS;Initial Catalog=login;Integrated Security=True");
+       //rohan  SqlConnection connect = new SqlConnection(@"Data Source=LAPTOP-QTLH4POT\SQLEXPRESS;Initial Catalog=login;Integrated Security=True");
+        SqlConnection connect = new SqlConnection(@"Data Source=DESKTOP-23BLQQJ\SQLEXPRESS;Initial Catalog=login;Integrated Security=True");
+
         public Form2()
         {
             InitializeComponent();

@@ -13,9 +13,9 @@ namespace Restaurant_Management_System
 {
     public partial class loginForm : Form
     {
-       SqlConnection connect = new SqlConnection(@"Data Source=LAPTOP-QTLH4POT\SQLEXPRESS;Initial Catalog=login;Integrated Security=True"); //Rohan
+       //SqlConnection connect = new SqlConnection(@"Data Source=LAPTOP-QTLH4POT\SQLEXPRESS;Initial Catalog=login;Integrated Security=True"); //Rohan
        //SqlConnection connect = new SqlConnection(@"Data Source=DESKTOP-IIFK5IM\SQLEXPRESS;Initial Catalog=login;Integrated Security=True"); //Kushal
-       //SqlConnection connect = new SqlConnection(@"Data Source=DESKTOP-U5GPC2A\SQLEXPRESS;Initial Catalog=login;Integrated Security=True");
+       SqlConnection connect = new SqlConnection(@"Data Source=DESKTOP-23BLQQJ\SQLEXPRESS;Initial Catalog=login;Integrated Security=True");
         public loginForm()
         {
             InitializeComponent();
@@ -46,7 +46,7 @@ namespace Restaurant_Management_System
                 sda.Fill(dt);
                 if (dt.Rows.Count > 0)
                 {
-                    new Form2().Show();
+                    new Form3().Show();
                     this.Hide();
                 }
                 else
