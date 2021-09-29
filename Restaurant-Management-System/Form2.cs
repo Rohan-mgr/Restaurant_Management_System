@@ -46,7 +46,7 @@ namespace Restaurant_Management_System
                 foreach (DataRow dataRow in dt.Rows)
                 {
                     sn++;
-                    dataGridView1.Rows.Add(sn, dataRow["category"], dataRow["items"], dataRow["quantity"], dataRow["unitprice"], dataRow["totalprice"]);
+                    dataGridView1.Rows.Add(dataRow["id"], dataRow["category"], dataRow["items"], dataRow["quantity"], dataRow["unitprice"], dataRow["totalprice"]);
                 }
             }
             catch (Exception err)
@@ -858,6 +858,7 @@ namespace Restaurant_Management_System
                         dataGridView1.Rows.RemoveAt(row.Index);
                         MessageBox.Show("Removed Successfully");
                         get_GrandTotal();
+                        DisplayData();
                     }
                 }
                 else
@@ -901,6 +902,12 @@ namespace Restaurant_Management_System
             
 
             grandTotalLabel.Text = "Rs. 00"; 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            new Form3().Show();
+            this.Hide();
         }
     }
 }
