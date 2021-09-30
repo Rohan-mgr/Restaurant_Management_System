@@ -56,3 +56,5 @@ C:\Users\me\Desktop\Restaurant_Management_System\Restaurant-Management-System\ob
 C:\Users\me\Desktop\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant-Management-System.pdb
 C:\Users\me\Desktop\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.Form3.resources
 C:\Users\me\Desktop\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.UserControl1.resources
+C:\Users\HP\source\repos\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.Form3.resources
+C:\Users\HP\source\repos\Restaurant_Management_System\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.UserControl1.resources
