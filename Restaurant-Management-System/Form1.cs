@@ -13,7 +13,7 @@ namespace Restaurant_Management_System
 {
     public partial class loginForm : Form
     {
-       SqlConnection connect = new SqlConnection(@"Data Source=LAPTOP-QTLH4POT\SQLEXPRESS;Initial Catalog=login;Integrated Security=True"); //Rohan
+       SqlConnection connect = new SqlConnection(@"Data Source=DESKTOP-K6A2GOM\SQLEXPRESS;Initial Catalog=login;Integrated Security=True"); //Rohan
        //SqlConnection connect = new SqlConnection(@"Data Source=DESKTOP-IIFK5IM\SQLEXPRESS;Initial Catalog=login;Integrated Security=True"); //Kushal
        //SqlConnection connect = new SqlConnection(@"Data Source=DESKTOP-23BLQQJ\SQLEXPRESS;Initial Catalog=login;Integrated Security=True");
         public loginForm()

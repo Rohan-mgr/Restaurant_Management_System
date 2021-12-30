@@ -12,20 +12,40 @@ namespace Restaurant_Management_System
 {
     public partial class Form3 : Form
     {
+        public static string SetValueForText1;
+        public static string reserveColor;
         public Form3()
         {
             InitializeComponent();
         }
+        
+        private void TableFunc()
+        {
+            int tableNo = Convert.ToInt32(tableComboBox.Text);
+            SetValueForText1 = tableNo.ToString();
+        }
+
+        
 
         private void label2_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
+        
+            reserveColor = "Red";
+            if(tableComboBox.Text == "")
+            {
+                MessageBox.Show("Please Select Table No first :)");
+            }
+            else
+            {
+            TableFunc();
             new Form2().Show();
             this.Hide();
+            }
         }
 
         int counter = 0;
@@ -65,6 +85,26 @@ namespace Restaurant_Management_System
                 
                 welcomeText3.Text = txt.Substring(0, counter);
             }
+        }
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            reserveColor = "Yellow";
+            if (tableComboBox.Text == "")
+            {
+                MessageBox.Show("Please Select Table No first :)");
+            }
+            else
+            {
+                TableFunc();
+                new Form2().Show();
+                this.Hide();
+            }
+        }
+
+        private void tableComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

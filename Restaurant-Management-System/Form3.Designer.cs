@@ -32,11 +32,11 @@ namespace Restaurant_Management_System
             this.components = new System.ComponentModel.Container();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.tableComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.go_Btn = new System.Windows.Forms.Button();
+            this.reserve_Btn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -76,10 +76,10 @@ namespace Restaurant_Management_System
             this.label1.TabIndex = 1;
             this.label1.Text = "Table No: ";
             // 
-            // comboBox1
+            // tableComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.tableComboBox.FormattingEnabled = true;
+            this.tableComboBox.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -92,11 +92,12 @@ namespace Restaurant_Management_System
             "10",
             "11",
             "12"});
-            this.comboBox1.Location = new System.Drawing.Point(33, 214);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(103, 28);
-            this.comboBox1.TabIndex = 2;
+            this.tableComboBox.Location = new System.Drawing.Point(33, 214);
+            this.tableComboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tableComboBox.Name = "tableComboBox";
+            this.tableComboBox.Size = new System.Drawing.Size(103, 28);
+            this.tableComboBox.TabIndex = 2;
+            this.tableComboBox.SelectedIndexChanged += new System.EventHandler(this.tableComboBox_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -113,9 +114,9 @@ namespace Restaurant_Management_System
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.go_Btn);
+            this.panel1.Controls.Add(this.reserve_Btn);
+            this.panel1.Controls.Add(this.tableComboBox);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -124,26 +125,27 @@ namespace Restaurant_Management_System
             this.panel1.Size = new System.Drawing.Size(286, 605);
             this.panel1.TabIndex = 4;
             // 
-            // button2
+            // go_Btn
             // 
-            this.button2.Location = new System.Drawing.Point(33, 464);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(135, 54);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Go";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.go_Btn.Location = new System.Drawing.Point(33, 464);
+            this.go_Btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.go_Btn.Name = "go_Btn";
+            this.go_Btn.Size = new System.Drawing.Size(135, 54);
+            this.go_Btn.TabIndex = 3;
+            this.go_Btn.Text = "Go";
+            this.go_Btn.UseVisualStyleBackColor = true;
+            this.go_Btn.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // reserve_Btn
             // 
-            this.button1.Location = new System.Drawing.Point(33, 402);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 54);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Reserve";
-            this.button1.UseVisualStyleBackColor = true;
+            this.reserve_Btn.Location = new System.Drawing.Point(33, 402);
+            this.reserve_Btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.reserve_Btn.Name = "reserve_Btn";
+            this.reserve_Btn.Size = new System.Drawing.Size(135, 54);
+            this.reserve_Btn.TabIndex = 3;
+            this.reserve_Btn.Text = "Reserve";
+            this.reserve_Btn.UseVisualStyleBackColor = true;
+            this.reserve_Btn.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2
             // 
@@ -271,7 +273,7 @@ namespace Restaurant_Management_System
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox tableComboBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
@@ -279,8 +281,8 @@ namespace Restaurant_Management_System
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button go_Btn;
+        private System.Windows.Forms.Button reserve_Btn;
         private System.Windows.Forms.Label welcomeText1;
         private System.Windows.Forms.Label welcomeText2;
         private System.Windows.Forms.Label welcomeText3;

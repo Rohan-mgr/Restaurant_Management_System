@@ -14,12 +14,14 @@ namespace Restaurant_Management_System
 {
     public partial class Form2 : Form
     {
-          SqlConnection connect = new SqlConnection(@"Data Source=LAPTOP-QTLH4POT\SQLEXPRESS;Initial Catalog=login;Integrated Security=True");
+          SqlConnection connect = new SqlConnection(@"Data Source=DESKTOP-K6A2GOM\SQLEXPRESS;Initial Catalog=login;Integrated Security=True"); //Rohan
         //SqlConnection connect = new SqlConnection(@"Data Source=DESKTOP-23BLQQJ\SQLEXPRESS;Initial Catalog=login;Integrated Security=True");
 
         public Form2()
         {
             InitializeComponent();
+            Form3 objForm3 = new Form3();
+            tableLabel.Text = Form3.SetValueForText1;
         }
 
         private void f2_close_Click(object sender, EventArgs e)
@@ -826,11 +828,67 @@ namespace Restaurant_Management_System
             }
         }
 
+        private Color colour;
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (tabControl1.SelectedTab == payment )
             {
                 DisplayData();
+            }
+            if(tabControl1.SelectedTab == res_tab)
+            {
+                Form3 colorObj = new Form3();
+                string clr = Form3.reserveColor;
+                if(clr == "Yellow")
+                {
+                     colour = Color.FromArgb(255, 255, 0);
+                }
+                if(clr == "Red")
+                {
+                     colour = Color.FromArgb(255, 0, 0);
+                }
+                switch(tableLabel.Text)
+                {
+                    case "1":
+                        Table1.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                        break;
+                    case "2":
+                        Table2.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                        break;
+                    case "3":
+                        Table3.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                        break;
+                    case "4":
+                        Table4.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                        break;
+                    case "5":
+                        Table5.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                        break;
+                    case "6":
+                        Table6.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                        break;
+                    case "7":
+                        Table7.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                        break;
+                    case "8":
+                        Table8.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                        break;
+                    case "9":
+                        Table9.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                        break;
+                    case "10":
+                        Table10.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                        break;
+                    case "11":
+                        Table11.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                        break;
+                    case "12":
+                        Table12.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                        break;
+                    default:
+                        MessageBox.Show("Please Select Table No first :)");
+                        break;
+                }
             }
         }
 
@@ -908,6 +966,11 @@ namespace Restaurant_Management_System
         {
             new Form3().Show();
             this.Hide();
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
