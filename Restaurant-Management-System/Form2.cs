@@ -41,7 +41,7 @@ namespace Restaurant_Management_System
                 SqlCommand cmd = new SqlCommand(query, connect);
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
-                sda.Fill(dt);
+                sda.Fill(dt);  
                 dataGridView1.Rows.Clear();
 
                 int sn = 0;
@@ -838,56 +838,76 @@ namespace Restaurant_Management_System
             if(tabControl1.SelectedTab == res_tab)
             {
                 Form3 colorObj = new Form3();
-                string clr = Form3.reserveColor;
-                if(clr == "Yellow")
+                try
                 {
-                     colour = Color.FromArgb(255, 255, 0);
+                    if(connect.State != ConnectionState.Open)
+                    {
+                        connect.Open();
+                    }
+                    string query = "select * from reservationDetails";
+                    SqlCommand cmd = new SqlCommand(query, connect);
+                    SqlDataReader rdr = cmd.ExecuteReader();
+                    if(rdr.HasRows)
+                    {
+                        while (rdr.Read())
+                        {
+                            string clr = rdr["color"].ToString();
+                            if (clr == "Yellow")
+                            {
+                                colour = Color.FromArgb(255, 255, 0);
+                            }
+                            if (clr == "Red")
+                            {
+                                colour = Color.FromArgb(255, 0, 0);
+                            }
+                            switch (rdr["tableNo"].ToString())
+                            {
+                                case "1":
+                                    Table1.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                                    break;
+                                case "2":
+                                    Table2.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                                    break;
+                                case "3":
+                                    Table3.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                                    break;
+                                case "4":
+                                    Table4.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                                    break;
+                                case "5":
+                                    Table5.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                                    break;
+                                case "6":
+                                    Table6.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                                    break;
+                                case "7":
+                                    Table7.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                                    break;
+                                case "8":
+                                    Table8.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                                    break;
+                                case "9":
+                                    Table9.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                                    break;
+                                case "10":
+                                    Table10.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                                    break;
+                                case "11":
+                                    Table11.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                                    break;
+                                case "12":
+                                    Table12.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                                    break;
+                                default:
+                                    MessageBox.Show("Please Select Table No first :)");
+                                    break;
+                            }
+                        }
+                    }
                 }
-                if(clr == "Red")
+                catch(Exception err)
                 {
-                     colour = Color.FromArgb(255, 0, 0);
-                }
-                switch(tableLabel.Text)
-                {
-                    case "1":
-                        Table1.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
-                        break;
-                    case "2":
-                        Table2.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
-                        break;
-                    case "3":
-                        Table3.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
-                        break;
-                    case "4":
-                        Table4.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
-                        break;
-                    case "5":
-                        Table5.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
-                        break;
-                    case "6":
-                        Table6.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
-                        break;
-                    case "7":
-                        Table7.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
-                        break;
-                    case "8":
-                        Table8.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
-                        break;
-                    case "9":
-                        Table9.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
-                        break;
-                    case "10":
-                        Table10.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
-                        break;
-                    case "11":
-                        Table11.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
-                        break;
-                    case "12":
-                        Table12.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
-                        break;
-                    default:
-                        MessageBox.Show("Please Select Table No first :)");
-                        break;
+                    MessageBox.Show(err.ToString());
                 }
             }
         }

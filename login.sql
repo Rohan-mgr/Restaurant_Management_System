@@ -24,3 +24,10 @@ create table orderDetails(
 drop table orderDetails;
 insert into orderDetails values ('Snacks', 'French Fries', 10, 75.25, 750); 
 select * from orderDetails;
+
+create table reservationDetails(
+	tableNo int primary key,
+	color nvarchar(50),
+);
+drop table reservationDetails;
+select * from reservationDetails;
