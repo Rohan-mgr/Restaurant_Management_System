@@ -30,9 +30,9 @@ namespace Restaurant_Management_System
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.order_tab = new System.Windows.Forms.TabPage();
             this.secondaryTab = new System.Windows.Forms.TabControl();
@@ -80,6 +80,7 @@ namespace Restaurant_Management_System
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.mainCourse = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.addmainCourseToCart = new System.Windows.Forms.Button();
             this.mainCourseTotalPrice = new System.Windows.Forms.TextBox();
             this.label111 = new System.Windows.Forms.Label();
@@ -122,6 +123,7 @@ namespace Restaurant_Management_System
             this.pictureBox30 = new System.Windows.Forms.PictureBox();
             this.pictureBox31 = new System.Windows.Forms.PictureBox();
             this.dessert = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
             this.addDessertToCart = new System.Windows.Forms.Button();
             this.dessertTotalPrice = new System.Windows.Forms.TextBox();
             this.label115 = new System.Windows.Forms.Label();
@@ -164,6 +166,7 @@ namespace Restaurant_Management_System
             this.pictureBox40 = new System.Windows.Forms.PictureBox();
             this.pictureBox41 = new System.Windows.Forms.PictureBox();
             this.coldDrinks = new System.Windows.Forms.TabPage();
+            this.button3 = new System.Windows.Forms.Button();
             this.addDrinksToCart = new System.Windows.Forms.Button();
             this.coldDrinkTotalPrice = new System.Windows.Forms.TextBox();
             this.label119 = new System.Windows.Forms.Label();
@@ -206,6 +209,7 @@ namespace Restaurant_Management_System
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.beverages = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
             this.addBeverageToCart = new System.Windows.Forms.Button();
             this.beverageTotalPrice = new System.Windows.Forms.TextBox();
             this.label123 = new System.Windows.Forms.Label();
@@ -248,6 +252,11 @@ namespace Restaurant_Management_System
             this.pictureBox50 = new System.Windows.Forms.PictureBox();
             this.pictureBox51 = new System.Windows.Forms.PictureBox();
             this.res_tab = new System.Windows.Forms.TabPage();
+            this.label127 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.Table8 = new System.Windows.Forms.Button();
             this.Table6 = new System.Windows.Forms.Button();
             this.Table12 = new System.Windows.Forms.Button();
@@ -261,6 +270,7 @@ namespace Restaurant_Management_System
             this.Table3 = new System.Windows.Forms.Button();
             this.Table1 = new System.Windows.Forms.Button();
             this.payment = new System.Windows.Forms.TabPage();
+            this.button7 = new System.Windows.Forms.Button();
             this.grandTotalLabel = new System.Windows.Forms.Label();
             this.grandTotalTxt = new System.Windows.Forms.Label();
             this.printBtn = new System.Windows.Forms.Button();
@@ -275,15 +285,14 @@ namespace Restaurant_Management_System
             this.customer_log = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.f2_close = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.btn_min = new System.Windows.Forms.Button();
             this.restaurantName = new System.Windows.Forms.Label();
             this.tagTitle = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.tableLabel = new System.Windows.Forms.Label();
+            this.pictureBox52 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.order_tab.SuspendLayout();
             this.secondaryTab.SuspendLayout();
@@ -351,8 +360,8 @@ namespace Restaurant_Management_System
             this.payment.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -920,6 +929,7 @@ namespace Restaurant_Management_System
             // 
             // mainCourse
             // 
+            this.mainCourse.Controls.Add(this.button1);
             this.mainCourse.Controls.Add(this.addmainCourseToCart);
             this.mainCourse.Controls.Add(this.mainCourseTotalPrice);
             this.mainCourse.Controls.Add(this.label111);
@@ -969,6 +979,19 @@ namespace Restaurant_Management_System
             this.mainCourse.TabIndex = 1;
             this.mainCourse.Text = "Main Course";
             this.mainCourse.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(1000, 481);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(97, 34);
+            this.button1.TabIndex = 60;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // addmainCourseToCart
             // 
@@ -1421,6 +1444,7 @@ namespace Restaurant_Management_System
             // 
             // dessert
             // 
+            this.dessert.Controls.Add(this.button2);
             this.dessert.Controls.Add(this.addDessertToCart);
             this.dessert.Controls.Add(this.dessertTotalPrice);
             this.dessert.Controls.Add(this.label115);
@@ -1470,6 +1494,19 @@ namespace Restaurant_Management_System
             this.dessert.TabIndex = 2;
             this.dessert.Text = "Dessert";
             this.dessert.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(997, 481);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(97, 34);
+            this.button2.TabIndex = 90;
+            this.button2.Text = "Back";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // addDessertToCart
             // 
@@ -1927,6 +1964,7 @@ namespace Restaurant_Management_System
             // 
             // coldDrinks
             // 
+            this.coldDrinks.Controls.Add(this.button3);
             this.coldDrinks.Controls.Add(this.addDrinksToCart);
             this.coldDrinks.Controls.Add(this.coldDrinkTotalPrice);
             this.coldDrinks.Controls.Add(this.label119);
@@ -1975,6 +2013,19 @@ namespace Restaurant_Management_System
             this.coldDrinks.TabIndex = 3;
             this.coldDrinks.Text = "Cold Drinks";
             this.coldDrinks.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Location = new System.Drawing.Point(997, 481);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(97, 34);
+            this.button3.TabIndex = 62;
+            this.button3.Text = "Back";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // addDrinksToCart
             // 
@@ -2427,6 +2478,7 @@ namespace Restaurant_Management_System
             // 
             // beverages
             // 
+            this.beverages.Controls.Add(this.button4);
             this.beverages.Controls.Add(this.addBeverageToCart);
             this.beverages.Controls.Add(this.beverageTotalPrice);
             this.beverages.Controls.Add(this.label123);
@@ -2476,6 +2528,19 @@ namespace Restaurant_Management_System
             this.beverages.Text = "Beverages";
             this.beverages.UseVisualStyleBackColor = true;
             this.beverages.Click += new System.EventHandler(this.tabPage5_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button4.Location = new System.Drawing.Point(998, 481);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(97, 34);
+            this.button4.TabIndex = 120;
+            this.button4.Text = "Back";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // addBeverageToCart
             // 
@@ -2938,6 +3003,11 @@ namespace Restaurant_Management_System
             // 
             // res_tab
             // 
+            this.res_tab.Controls.Add(this.label127);
+            this.res_tab.Controls.Add(this.label17);
+            this.res_tab.Controls.Add(this.panel4);
+            this.res_tab.Controls.Add(this.panel3);
+            this.res_tab.Controls.Add(this.button5);
             this.res_tab.Controls.Add(this.Table8);
             this.res_tab.Controls.Add(this.Table6);
             this.res_tab.Controls.Add(this.Table12);
@@ -2958,6 +3028,55 @@ namespace Restaurant_Management_System
             this.res_tab.TabIndex = 1;
             this.res_tab.Text = "Reservation";
             this.res_tab.UseVisualStyleBackColor = true;
+            // 
+            // label127
+            // 
+            this.label127.AutoSize = true;
+            this.label127.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label127.Location = new System.Drawing.Point(932, 93);
+            this.label127.Name = "label127";
+            this.label127.Size = new System.Drawing.Size(95, 25);
+            this.label127.TabIndex = 65;
+            this.label127.Text = "Reserved";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(932, 33);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(96, 25);
+            this.label17.TabIndex = 64;
+            this.label17.Text = "Occupied";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Yellow;
+            this.panel4.Location = new System.Drawing.Point(867, 85);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(38, 37);
+            this.panel4.TabIndex = 63;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Red;
+            this.panel3.Location = new System.Drawing.Point(867, 27);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(38, 37);
+            this.panel3.TabIndex = 62;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button5.Location = new System.Drawing.Point(958, 508);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(97, 34);
+            this.button5.TabIndex = 61;
+            this.button5.Text = "Back";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Table8
             // 
@@ -3081,6 +3200,7 @@ namespace Restaurant_Management_System
             // 
             // payment
             // 
+            this.payment.Controls.Add(this.button7);
             this.payment.Controls.Add(this.grandTotalLabel);
             this.payment.Controls.Add(this.grandTotalTxt);
             this.payment.Controls.Add(this.printBtn);
@@ -3094,6 +3214,19 @@ namespace Restaurant_Management_System
             this.payment.TabIndex = 2;
             this.payment.Text = "Customers Billing";
             this.payment.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button7.Location = new System.Drawing.Point(1006, 508);
+            this.button7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(97, 34);
+            this.button7.TabIndex = 61;
+            this.button7.Text = "Back";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // grandTotalLabel
             // 
@@ -3171,14 +3304,14 @@ namespace Restaurant_Management_System
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlDark;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dataGridView1.ColumnHeadersHeight = 32;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -3189,27 +3322,27 @@ namespace Restaurant_Management_System
             this.unitpriceColumn,
             this.totalpriceColumn});
             this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle14;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ScrollBar;
             this.dataGridView1.Location = new System.Drawing.Point(11, 94);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -3290,16 +3423,6 @@ namespace Restaurant_Management_System
             this.label2.Text = "9841414141";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // f2_close
-            // 
-            this.f2_close.AutoSize = true;
-            this.f2_close.Location = new System.Drawing.Point(15, 10);
-            this.f2_close.Name = "f2_close";
-            this.f2_close.Size = new System.Drawing.Size(49, 20);
-            this.f2_close.TabIndex = 3;
-            this.f2_close.Text = "Close";
-            this.f2_close.Click += new System.EventHandler(this.f2_close_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
@@ -3311,22 +3434,12 @@ namespace Restaurant_Management_System
             this.panel1.Size = new System.Drawing.Size(1128, 52);
             this.panel1.TabIndex = 5;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.OrangeRed;
-            this.panel2.Controls.Add(this.f2_close);
-            this.panel2.Location = new System.Drawing.Point(1053, -4);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(76, 38);
-            this.panel2.TabIndex = 6;
-            // 
             // btn_min
             // 
             this.btn_min.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btn_min.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_min.Font = new System.Drawing.Font("Wide Latin", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_min.Location = new System.Drawing.Point(1012, -3);
+            this.btn_min.Location = new System.Drawing.Point(1013, -3);
             this.btn_min.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_min.Name = "btn_min";
             this.btn_min.Size = new System.Drawing.Size(47, 39);
@@ -3378,6 +3491,7 @@ namespace Restaurant_Management_System
             this.label7.Size = new System.Drawing.Size(130, 34);
             this.label7.TabIndex = 10;
             this.label7.Text = "Table No :";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // tableLabel
             // 
@@ -3390,18 +3504,29 @@ namespace Restaurant_Management_System
             this.tableLabel.Text = "label17";
             this.tableLabel.Click += new System.EventHandler(this.label17_Click);
             // 
+            // pictureBox52
+            // 
+            this.pictureBox52.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox52.Image")));
+            this.pictureBox52.Location = new System.Drawing.Point(1058, -3);
+            this.pictureBox52.Name = "pictureBox52";
+            this.pictureBox52.Size = new System.Drawing.Size(66, 39);
+            this.pictureBox52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox52.TabIndex = 12;
+            this.pictureBox52.TabStop = false;
+            this.pictureBox52.Click += new System.EventHandler(this.pictureBox52_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
             this.ClientSize = new System.Drawing.Size(1124, 705);
+            this.Controls.Add(this.pictureBox52);
             this.Controls.Add(this.tableLabel);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.tagTitle);
             this.Controls.Add(this.restaurantName);
             this.Controls.Add(this.btn_min);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tabControl1);
@@ -3411,6 +3536,7 @@ namespace Restaurant_Management_System
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.tabControl1.ResumeLayout(false);
             this.order_tab.ResumeLayout(false);
             this.secondaryTab.ResumeLayout(false);
@@ -3480,14 +3606,14 @@ namespace Restaurant_Management_System
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).EndInit();
             this.res_tab.ResumeLayout(false);
+            this.res_tab.PerformLayout();
             this.payment.ResumeLayout(false);
             this.payment.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3506,7 +3632,6 @@ namespace Restaurant_Management_System
         private System.Windows.Forms.TabPage res_tab;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label f2_close;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -3541,7 +3666,6 @@ namespace Restaurant_Management_System
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btn_min;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
@@ -3746,5 +3870,16 @@ namespace Restaurant_Management_System
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label tableLabel;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Label label127;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PictureBox pictureBox52;
     }
 }

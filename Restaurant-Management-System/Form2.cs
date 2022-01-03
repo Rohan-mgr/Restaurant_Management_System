@@ -21,7 +21,15 @@ namespace Restaurant_Management_System
         {
             InitializeComponent();
             Form3 objForm3 = new Form3();
-            tableLabel.Text = Form3.SetValueForText1;
+            if (Form3.SetValueForText1 != "")
+            {
+                tableLabel.Text = Form3.SetValueForText1;
+            }
+            else
+            {
+                tableLabel.Visible = false;
+                label7.Visible = false;
+            }
         }
 
         private void f2_close_Click(object sender, EventArgs e)
@@ -779,6 +787,89 @@ namespace Restaurant_Management_System
             beverageTotalPrice.Text = total.ToString();
         }
 
+        private void reservationFunc()
+        {
+            Form3 colorObj = new Form3();
+            try
+            {
+                if (connect.State != ConnectionState.Open)
+                {
+                    connect.Open();
+                }
+                string query = "select * from reservationDetails";
+                SqlCommand cmd = new SqlCommand(query, connect);
+                SqlDataReader rdr = cmd.ExecuteReader();
+                if (rdr.HasRows)
+                {
+                    while (rdr.Read())
+                    {
+                        string clr = rdr["color"].ToString();
+                        if (clr == "Yellow")
+                        {
+                            colour = Color.FromArgb(255, 255, 0);
+                        }
+                        if (clr == "Red")
+                        {
+                            colour = Color.FromArgb(255, 0, 0);
+                        }
+                        switch (rdr["tableNo"].ToString())
+                        {
+                            case "1":
+                                Table1.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                                break;
+                            case "2":
+                                Table2.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                                break;
+                            case "3":
+                                Table3.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                                break;
+                            case "4":
+                                Table4.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                                break;
+                            case "5":
+                                Table5.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                                break;
+                            case "6":
+                                Table6.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                                break;
+                            case "7":
+                                Table7.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                                break;
+                            case "8":
+                                Table8.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                                break;
+                            case "9":
+                                Table9.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                                break;
+                            case "10":
+                                Table10.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                                break;
+                            case "11":
+                                Table11.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                                break;
+                            case "12":
+                                Table12.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
+                                break;
+                            default:
+                                MessageBox.Show("Please Select Table No first :)");
+                                break;
+                        }
+                    }
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.ToString());
+            }
+            finally
+            {
+                if (connect.State == ConnectionState.Open)
+                {
+                    connect.Close();
+                }
+            }
+        }
+
         private void addBeverageToCart_Click(object sender, EventArgs e)
         {
             try
@@ -837,78 +928,7 @@ namespace Restaurant_Management_System
             }
             if(tabControl1.SelectedTab == res_tab)
             {
-                Form3 colorObj = new Form3();
-                try
-                {
-                    if(connect.State != ConnectionState.Open)
-                    {
-                        connect.Open();
-                    }
-                    string query = "select * from reservationDetails";
-                    SqlCommand cmd = new SqlCommand(query, connect);
-                    SqlDataReader rdr = cmd.ExecuteReader();
-                    if(rdr.HasRows)
-                    {
-                        while (rdr.Read())
-                        {
-                            string clr = rdr["color"].ToString();
-                            if (clr == "Yellow")
-                            {
-                                colour = Color.FromArgb(255, 255, 0);
-                            }
-                            if (clr == "Red")
-                            {
-                                colour = Color.FromArgb(255, 0, 0);
-                            }
-                            switch (rdr["tableNo"].ToString())
-                            {
-                                case "1":
-                                    Table1.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
-                                    break;
-                                case "2":
-                                    Table2.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
-                                    break;
-                                case "3":
-                                    Table3.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
-                                    break;
-                                case "4":
-                                    Table4.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
-                                    break;
-                                case "5":
-                                    Table5.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
-                                    break;
-                                case "6":
-                                    Table6.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
-                                    break;
-                                case "7":
-                                    Table7.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
-                                    break;
-                                case "8":
-                                    Table8.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
-                                    break;
-                                case "9":
-                                    Table9.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
-                                    break;
-                                case "10":
-                                    Table10.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
-                                    break;
-                                case "11":
-                                    Table11.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
-                                    break;
-                                case "12":
-                                    Table12.BackColor = Color.FromArgb(colour.R, colour.G, colour.B);
-                                    break;
-                                default:
-                                    MessageBox.Show("Please Select Table No first :)");
-                                    break;
-                            }
-                        }
-                    }
-                }
-                catch(Exception err)
-                {
-                    MessageBox.Show(err.ToString());
-                }
+                reservationFunc();
             }
         }
 
@@ -991,6 +1011,66 @@ namespace Restaurant_Management_System
         private void label17_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            new Form3().Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new Form3().Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new Form3().Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new Form3().Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            new Form3().Show();
+            this.Hide();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            new Form3().Show();
+            this.Hide();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox52_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            Form3 objForm3 = new Form3();
+            label7.Text = Form3.SetValueForText1;
+           // MessageBox.Show(isTableHidden);
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            reservationFunc();
+            tabControl1.SelectTab("res_tab");
+
         }
     }
 }

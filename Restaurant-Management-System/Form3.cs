@@ -75,12 +75,15 @@ namespace Restaurant_Management_System
                 }
                 else
                 {
-                    connect.Open();
-                    string query = "Insert into reservationDetails (tableNo, color)  values (@parameter_tableNo, @parameter_color)";
-                    SqlCommand cmd = new SqlCommand(query, connect);
-                    cmd.Parameters.AddWithValue("@parameter_tableNo", tableNo);
-                    cmd.Parameters.AddWithValue("@parameter_color", seletedTableColor);
-                    cmd.ExecuteNonQuery();
+                    if(tableNo != "")
+                    {
+                        connect.Open();
+                        string query = "Insert into reservationDetails (tableNo, color)  values (@parameter_tableNo, @parameter_color)";
+                        SqlCommand cmd = new SqlCommand(query, connect);
+                        cmd.Parameters.AddWithValue("@parameter_tableNo", tableNo);
+                        cmd.Parameters.AddWithValue("@parameter_color", seletedTableColor);
+                        cmd.ExecuteNonQuery();
+                    }
                 }
             }
             catch (Exception err)
@@ -192,12 +195,15 @@ namespace Restaurant_Management_System
                 }
                 else
                 {
-                    connect.Open();
-                    string query = "Insert into reservationDetails (tableNo, color)  values (@parameter_tableNo, @parameter_color)";
-                    SqlCommand cmd = new SqlCommand(query, connect);
-                    cmd.Parameters.AddWithValue("@parameter_tableNo", tableNo);
-                    cmd.Parameters.AddWithValue("@parameter_color", seletedTableColor);
-                    cmd.ExecuteNonQuery();
+                    if(tableNo != "")
+                    {
+                        connect.Open();
+                        string query = "Insert into reservationDetails (tableNo, color)  values (@parameter_tableNo, @parameter_color)";
+                        SqlCommand cmd = new SqlCommand(query, connect);
+                        cmd.Parameters.AddWithValue("@parameter_tableNo", tableNo);
+                        cmd.Parameters.AddWithValue("@parameter_color", seletedTableColor);
+                        cmd.ExecuteNonQuery();
+                    }
                 }
             }
             catch (Exception err)
@@ -216,7 +222,7 @@ namespace Restaurant_Management_System
             {
                 MessageBox.Show("Please Select Table No first :)");
             }
-            else
+            if(tableNo != "")
             {
                 TableFunc();
                 if(isTableExist != tableNo)
@@ -232,6 +238,19 @@ namespace Restaurant_Management_System
         private void tableComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
+            SetValueForText1 = "";
+            new Form2().Show();
+            this.Hide();
         }
     }
 }
