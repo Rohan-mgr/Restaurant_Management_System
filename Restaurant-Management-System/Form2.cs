@@ -45,8 +45,9 @@ namespace Restaurant_Management_System
                 {
                     connect.Open();
                 }
-                string query = "Select * from orderDetails";
+                string query = "Select * from orderDetails where tableNo=@parameter_tableNo";
                 SqlCommand cmd = new SqlCommand(query, connect);
+                cmd.Parameters.AddWithValue("@parameter_tableNo", Form3.SetValueForText1);
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);  
@@ -328,8 +329,9 @@ namespace Restaurant_Management_System
                     string quantity = snackQuantity.Text;
                     string price = snackUnitPrice.Text;
                     string totalPrice = snackTotalPrice.Text;
-                    string query = "Insert into orderDetails (category, items, quantity, unitprice, totalprice) values (@parameter_category, @parameter_items, @parameter_quantity, @parameter_unitprice, @parameter_totalprice)";
+                    string query = "Insert into orderDetails (tableNo, category, items, quantity, unitprice, totalprice) values (@parameter_tableNo, @parameter_category, @parameter_items, @parameter_quantity, @parameter_unitprice, @parameter_totalprice)";
                     SqlCommand cmd = new SqlCommand(query, connect);
+                    cmd.Parameters.AddWithValue("@parameter_tableNo", Form3.SetValueForText1);
                     cmd.Parameters.AddWithValue("@parameter_category", category);
                     cmd.Parameters.AddWithValue("@parameter_items", snackItems);
                     cmd.Parameters.AddWithValue("@parameter_quantity", quantity);
@@ -446,8 +448,9 @@ namespace Restaurant_Management_System
                     string quantity = mainCourseQuantity.Text;
                     string price = mainCourseUnitPrice.Text;
                     string totalPrice = mainCourseTotalPrice.Text;
-                    string query = "Insert into orderDetails (category, items, quantity, unitprice, totalprice) values (@parameter_category, @parameter_items, @parameter_quantity, @parameter_unitprice, @parameter_totalprice)";
+                    string query = "Insert into orderDetails (tableNo, category, items, quantity, unitprice, totalprice) values (@parameter_tableNo, @parameter_category, @parameter_items, @parameter_quantity, @parameter_unitprice, @parameter_totalprice)";
                     SqlCommand cmd = new SqlCommand(query, connect);
+                    cmd.Parameters.AddWithValue("@parameter_tableNo", Form3.SetValueForText1);
                     cmd.Parameters.AddWithValue("@parameter_category", category);
                     cmd.Parameters.AddWithValue("@parameter_items", Items);
                     cmd.Parameters.AddWithValue("@parameter_quantity", quantity);
@@ -564,8 +567,9 @@ namespace Restaurant_Management_System
                     string quantity = dessertQuantity.Text;
                     string price = dessertUnitPrice.Text;
                     string totalPrice = dessertTotalPrice.Text;
-                    string query = "Insert into orderDetails (category, items, quantity, unitprice, totalprice) values (@parameter_category, @parameter_items, @parameter_quantity, @parameter_unitprice, @parameter_totalprice)";
+                    string query = "Insert into orderDetails (tableNo, category, items, quantity, unitprice, totalprice) values (@parameter_tableNo, @parameter_category, @parameter_items, @parameter_quantity, @parameter_unitprice, @parameter_totalprice)";
                     SqlCommand cmd = new SqlCommand(query, connect);
+                    cmd.Parameters.AddWithValue("@parameter_tableNo", Form3.SetValueForText1);
                     cmd.Parameters.AddWithValue("@parameter_category", category);
                     cmd.Parameters.AddWithValue("@parameter_items", Items);
                     cmd.Parameters.AddWithValue("@parameter_quantity", quantity);
@@ -683,8 +687,9 @@ namespace Restaurant_Management_System
                     string quantity = coldDrinkQuantity.Text;
                     string price = coldDrinkUnitPrice.Text;
                     string totalPrice = coldDrinkTotalPrice.Text;
-                    string query = "Insert into orderDetails (category, items, quantity, unitprice, totalprice) values (@parameter_category, @parameter_items, @parameter_quantity, @parameter_unitprice, @parameter_totalprice)";
+                    string query = "Insert into orderDetails (tableNo, category, items, quantity, unitprice, totalprice) values (@parameter_tableNo, @parameter_category, @parameter_items, @parameter_quantity, @parameter_unitprice, @parameter_totalprice)";
                     SqlCommand cmd = new SqlCommand(query, connect);
+                    cmd.Parameters.AddWithValue("@parameter_tableNo", Form3.SetValueForText1);
                     cmd.Parameters.AddWithValue("@parameter_category", category);
                     cmd.Parameters.AddWithValue("@parameter_items", Items);
                     cmd.Parameters.AddWithValue("@parameter_quantity", quantity);
@@ -885,8 +890,9 @@ namespace Restaurant_Management_System
                     string quantity = beverageQuantity.Text;
                     string price = beverageUnitPrice.Text;
                     string totalPrice = beverageTotalPrice.Text;
-                    string query = "Insert into orderDetails (category, items, quantity, unitprice, totalprice) values (@parameter_category, @parameter_items, @parameter_quantity, @parameter_unitprice, @parameter_totalprice)";
+                    string query = "Insert into orderDetails (tableNo, category, items, quantity, unitprice, totalprice) values (@parameter_tableNo, @parameter_category, @parameter_items, @parameter_quantity, @parameter_unitprice, @parameter_totalprice)";
                     SqlCommand cmd = new SqlCommand(query, connect);
+                    cmd.Parameters.AddWithValue("@parameter_tableNo", Form3.SetValueForText1);
                     cmd.Parameters.AddWithValue("@parameter_category", category);
                     cmd.Parameters.AddWithValue("@parameter_items", Items);
                     cmd.Parameters.AddWithValue("@parameter_quantity", quantity);
@@ -993,8 +999,9 @@ namespace Restaurant_Management_System
             dataGridView1.Rows.Clear();
 
             connect.Open();
-            string query = "Delete from orderDetails";
+            string query = "Delete from orderDetails where tableNo=@parameter_tableNo";
             SqlCommand cmd = new SqlCommand(query, connect);
+            cmd.Parameters.AddWithValue("@parameter_tableNo", Form3.SetValueForText1);
             cmd.ExecuteNonQuery();
             connect.Close();
             
