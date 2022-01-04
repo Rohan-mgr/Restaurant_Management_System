@@ -260,7 +260,6 @@ namespace Restaurant_Management_System
                 connect.Close();
                 if(isTableExist == tableNo)
                 {
-                    MessageBox.Show("Table Exists in the database");
                     SetValueForText1 = tableNo;
                 }
                 else
