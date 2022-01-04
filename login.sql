@@ -15,14 +15,14 @@ select name, password from loginInfo;
 
 create table orderDetails(
 	id int primary key identity,
+	tableNo int,
 	category nvarchar(50), 
 	items nvarchar(50), 
 	quantity float, 
 	unitprice float, 
 	totalprice float
 );
-drop table orderDetails;
-insert into orderDetails values ('Snacks', 'French Fries', 10, 75.25, 750); 
+drop table orderDetails; 
 select * from orderDetails;
 
 create table reservationDetails(

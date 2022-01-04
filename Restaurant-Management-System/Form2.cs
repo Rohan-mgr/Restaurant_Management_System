@@ -32,6 +32,7 @@ namespace Restaurant_Management_System
             }
         }
 
+        
         private void f2_close_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -1078,6 +1079,148 @@ namespace Restaurant_Management_System
             reservationFunc();
             tabControl1.SelectTab("res_tab");
 
+        }
+
+
+        string tableNo = "";
+        private void Table1_Click(object sender, EventArgs e)
+        {
+            tableNo = "1";
+            freeTable();
+            MessageBox.Show("Table is Available Now.");
+            new Form3().Show();
+            this.Hide();
+            //MessageBox.Show(tableNo);
+        }
+
+        private void Table2_Click(object sender, EventArgs e)
+        {
+            tableNo = "2";
+            freeTable();
+            MessageBox.Show("Table is Available Now.");
+            new Form3().Show();
+            this.Hide();
+            
+        }
+
+        private void Table3_Click(object sender, EventArgs e)
+        {
+            tableNo = "3";
+            freeTable();
+            MessageBox.Show("Table is Available Now.");
+            new Form3().Show();
+            this.Hide();
+        }
+
+        private void Table4_Click(object sender, EventArgs e)
+        {
+            tableNo = "4";
+            freeTable();
+            MessageBox.Show("Table is Available Now.");
+            new Form3().Show();
+            this.Hide();
+        }
+
+        private void Table5_Click(object sender, EventArgs e)
+        {
+            tableNo = "5";
+            freeTable();
+            MessageBox.Show("Table is Available Now.");
+            new Form3().Show();
+            this.Hide();
+        }
+
+        private void Table6_Click(object sender, EventArgs e)
+        {
+            tableNo = "6";
+            freeTable();
+            MessageBox.Show("Table is Available Now.");
+            new Form3().Show();
+            this.Hide();
+        }
+
+        private void Table7_Click(object sender, EventArgs e)
+        {
+            tableNo = "7";
+            freeTable();
+            MessageBox.Show("Table is Available Now.");
+            new Form3().Show();
+            this.Hide();
+        }
+
+        private void Table8_Click(object sender, EventArgs e)
+        {
+            tableNo = "8";
+            freeTable();
+            MessageBox.Show("Table is Available Now.");
+            new Form3().Show();
+            this.Hide();
+        }
+
+        private void Table9_Click(object sender, EventArgs e)
+        {
+            tableNo = "9";
+            freeTable();
+            MessageBox.Show("Table is Available Now.");
+            new Form3().Show();
+            this.Hide();
+        }
+
+        private void Table10_Click(object sender, EventArgs e)
+        {
+            tableNo = "10";
+            freeTable();
+            MessageBox.Show("Table is Available Now.");
+            new Form3().Show();
+            this.Hide();
+        }
+
+        private void Table11_Click(object sender, EventArgs e)
+        {
+            tableNo = "11";
+            freeTable();
+            MessageBox.Show("Table is Available Now.");
+            new Form3().Show();
+            this.Hide();
+        }
+
+        private void Table12_Click(object sender, EventArgs e)
+        {
+            tableNo = "12";
+            freeTable();
+            MessageBox.Show("Table is Available Now.");
+            new Form3().Show();
+            this.Hide();
+        }
+
+        private void freeTable()
+        {
+            try
+            {
+                if (connect.State != ConnectionState.Open)
+                {
+                    connect.Open();
+                }
+                string query = "Delete from reservationDetails where tableNo=@parameter_tableNo";
+                string query2 = "Delete from orderDetails where tableNo=@parameter_tableNo";
+                SqlCommand cmd = new SqlCommand(query, connect);
+                SqlCommand cmd2 = new SqlCommand(query2, connect);
+                cmd.Parameters.AddWithValue("@parameter_tableNo", tableNo);
+                cmd2.Parameters.AddWithValue("@parameter_tableNo", tableNo);
+                cmd.ExecuteNonQuery();
+                cmd2.ExecuteNonQuery();
+            }
+            catch(Exception err)
+            {
+                MessageBox.Show(err.ToString());
+            }
+            finally
+            {
+                if(connect.State == ConnectionState.Open)
+                {
+                    connect.Close();
+                }
+            }
         }
     }
 }

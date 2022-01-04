@@ -39,7 +39,6 @@ namespace Restaurant_Management_System
             this.go_Btn = new System.Windows.Forms.Button();
             this.reserve_Btn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.welcomeText1 = new System.Windows.Forms.Label();
@@ -51,7 +50,6 @@ namespace Restaurant_Management_System
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -150,22 +148,11 @@ namespace Restaurant_Management_System
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Khaki;
-            this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(0, 599);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(874, 125);
             this.panel2.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(780, 82);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 20);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "About Us";
             // 
             // panel4
             // 
@@ -262,8 +249,6 @@ namespace Restaurant_Management_System
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,7 +261,6 @@ namespace Restaurant_Management_System
         private System.Windows.Forms.ComboBox tableComboBox;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button go_Btn;

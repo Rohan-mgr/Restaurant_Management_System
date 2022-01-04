@@ -154,10 +154,10 @@ namespace Restaurant_Management_System
             }
         }
         
+        string isTableExist = null;
         private void button1_Click(object sender, EventArgs e)
         {
             string tableNo = tableComboBox.Text;
-            string isTableExist = null;
             reserveColor = "Yellow";
             try
             {
@@ -247,8 +247,38 @@ namespace Restaurant_Management_System
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-
-            SetValueForText1 = "";
+            string tableNo = tableComboBox.Text;
+            try
+            {
+                if(connect.State != ConnectionState.Open)
+                {
+                    connect.Open();
+                }
+                SqlCommand commandToCheckTable = new SqlCommand("select Convert(Varchar(10), tableNo) from reservationDetails where Convert(Varchar(10), tableNo)=@parameter_tableNo", connect);
+                commandToCheckTable.Parameters.AddWithValue("@parameter_tableNo", tableNo);
+                isTableExist = (string)commandToCheckTable.ExecuteScalar();
+                connect.Close();
+                if(isTableExist == tableNo)
+                {
+                    MessageBox.Show("Table Exists in the database");
+                    SetValueForText1 = tableNo;
+                }
+                else
+                {
+                    SetValueForText1 = "";
+                }
+            }
+            catch(Exception err)
+            {
+                MessageBox.Show(err.ToString());
+            }
+            finally
+            {
+                if(connect.State == ConnectionState.Open)
+                {
+                    connect.Close();
+                }
+            }
             new Form2().Show();
             this.Hide();
         }
