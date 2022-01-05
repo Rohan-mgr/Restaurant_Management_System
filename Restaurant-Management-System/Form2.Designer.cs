@@ -30,9 +30,9 @@ namespace Restaurant_Management_System
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.order_tab = new System.Windows.Forms.TabPage();
             this.secondaryTab = new System.Windows.Forms.TabControl();
@@ -252,11 +252,14 @@ namespace Restaurant_Management_System
             this.pictureBox50 = new System.Windows.Forms.PictureBox();
             this.pictureBox51 = new System.Windows.Forms.PictureBox();
             this.res_tab = new System.Windows.Forms.TabPage();
+            this.label128 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.label127 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
+            this.Table6 = new System.Windows.Forms.Button();
             this.Table12 = new System.Windows.Forms.Button();
             this.Table10 = new System.Windows.Forms.Button();
             this.Table4 = new System.Windows.Forms.Button();
@@ -291,9 +294,6 @@ namespace Restaurant_Management_System
             this.label7 = new System.Windows.Forms.Label();
             this.tableLabel = new System.Windows.Forms.Label();
             this.pictureBox52 = new System.Windows.Forms.PictureBox();
-            this.Table6 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label128 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.order_tab.SuspendLayout();
             this.secondaryTab.SuspendLayout();
@@ -485,7 +485,7 @@ namespace Restaurant_Management_System
             this.addSnacksToCart.Name = "addSnacksToCart";
             this.addSnacksToCart.Size = new System.Drawing.Size(212, 46);
             this.addSnacksToCart.TabIndex = 30;
-            this.addSnacksToCart.Text = "Add To Cart";
+            this.addSnacksToCart.Text = "Add To List";
             this.addSnacksToCart.UseVisualStyleBackColor = false;
             this.addSnacksToCart.Click += new System.EventHandler(this.addSnacksToCart_Click);
             // 
@@ -1007,7 +1007,7 @@ namespace Restaurant_Management_System
             this.addmainCourseToCart.Name = "addmainCourseToCart";
             this.addmainCourseToCart.Size = new System.Drawing.Size(212, 46);
             this.addmainCourseToCart.TabIndex = 59;
-            this.addmainCourseToCart.Text = "Add To Cart";
+            this.addmainCourseToCart.Text = "Add To List";
             this.addmainCourseToCart.UseVisualStyleBackColor = false;
             this.addmainCourseToCart.Click += new System.EventHandler(this.addmainCourseToCart_Click);
             // 
@@ -1522,7 +1522,7 @@ namespace Restaurant_Management_System
             this.addDessertToCart.Name = "addDessertToCart";
             this.addDessertToCart.Size = new System.Drawing.Size(212, 46);
             this.addDessertToCart.TabIndex = 89;
-            this.addDessertToCart.Text = "Add To Cart";
+            this.addDessertToCart.Text = "Add To List";
             this.addDessertToCart.UseVisualStyleBackColor = false;
             this.addDessertToCart.Click += new System.EventHandler(this.addDessertToCart_Click);
             // 
@@ -2041,7 +2041,7 @@ namespace Restaurant_Management_System
             this.addDrinksToCart.Name = "addDrinksToCart";
             this.addDrinksToCart.Size = new System.Drawing.Size(212, 46);
             this.addDrinksToCart.TabIndex = 61;
-            this.addDrinksToCart.Text = "Add To Cart";
+            this.addDrinksToCart.Text = "Add To List";
             this.addDrinksToCart.UseVisualStyleBackColor = false;
             this.addDrinksToCart.Click += new System.EventHandler(this.addDrinksToCart_Click);
             // 
@@ -2556,7 +2556,7 @@ namespace Restaurant_Management_System
             this.addBeverageToCart.Name = "addBeverageToCart";
             this.addBeverageToCart.Size = new System.Drawing.Size(212, 46);
             this.addBeverageToCart.TabIndex = 119;
-            this.addBeverageToCart.Text = "Add To Cart";
+            this.addBeverageToCart.Text = "Add To List";
             this.addBeverageToCart.UseVisualStyleBackColor = false;
             this.addBeverageToCart.Click += new System.EventHandler(this.addBeverageToCart_Click);
             // 
@@ -3033,6 +3033,24 @@ namespace Restaurant_Management_System
             this.res_tab.Text = "Reservation";
             this.res_tab.UseVisualStyleBackColor = true;
             // 
+            // label128
+            // 
+            this.label128.AutoSize = true;
+            this.label128.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label128.Location = new System.Drawing.Point(932, 153);
+            this.label128.Name = "label128";
+            this.label128.Size = new System.Drawing.Size(92, 25);
+            this.label128.TabIndex = 67;
+            this.label128.Text = "Available";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel2.Location = new System.Drawing.Point(867, 147);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(38, 37);
+            this.panel2.TabIndex = 66;
+            // 
             // label127
             // 
             this.label127.AutoSize = true;
@@ -3081,6 +3099,17 @@ namespace Restaurant_Management_System
             this.button5.Text = "Back";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // Table6
+            // 
+            this.Table6.Location = new System.Drawing.Point(377, 236);
+            this.Table6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Table6.Name = "Table6";
+            this.Table6.Size = new System.Drawing.Size(90, 99);
+            this.Table6.TabIndex = 5;
+            this.Table6.Text = "Table 6";
+            this.Table6.UseVisualStyleBackColor = true;
+            this.Table6.Click += new System.EventHandler(this.Table6_Click);
             // 
             // Table12
             // 
@@ -3311,14 +3340,14 @@ namespace Restaurant_Management_System
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle58.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle58.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle58.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle58.ForeColor = System.Drawing.SystemColors.ControlDark;
-            dataGridViewCellStyle58.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle58.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle58.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle58;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeight = 32;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -3329,27 +3358,27 @@ namespace Restaurant_Management_System
             this.unitpriceColumn,
             this.totalpriceColumn});
             this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle59.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle59.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle59.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle59.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle59.SelectionBackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle59.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle59.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle59;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ScrollBar;
             this.dataGridView1.Location = new System.Drawing.Point(11, 94);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            dataGridViewCellStyle60.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle60.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle60.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle60.ForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle60.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle60.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle60.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle60;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -3511,35 +3540,6 @@ namespace Restaurant_Management_System
             this.pictureBox52.TabIndex = 12;
             this.pictureBox52.TabStop = false;
             this.pictureBox52.Click += new System.EventHandler(this.pictureBox52_Click);
-            // 
-            // Table6
-            // 
-            this.Table6.Location = new System.Drawing.Point(377, 236);
-            this.Table6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Table6.Name = "Table6";
-            this.Table6.Size = new System.Drawing.Size(90, 99);
-            this.Table6.TabIndex = 5;
-            this.Table6.Text = "Table 6";
-            this.Table6.UseVisualStyleBackColor = true;
-            this.Table6.Click += new System.EventHandler(this.Table6_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel2.Location = new System.Drawing.Point(867, 147);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(38, 37);
-            this.panel2.TabIndex = 66;
-            // 
-            // label128
-            // 
-            this.label128.AutoSize = true;
-            this.label128.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label128.Location = new System.Drawing.Point(932, 153);
-            this.label128.Name = "label128";
-            this.label128.Size = new System.Drawing.Size(92, 25);
-            this.label128.TabIndex = 67;
-            this.label128.Text = "Available";
             // 
             // Form2
             // 

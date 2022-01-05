@@ -343,7 +343,7 @@ namespace Restaurant_Management_System
                     snackQuantity.Value = 0;
                     snackUnitPrice.Clear();
                     snackTotalPrice.Clear();
-                    MessageBox.Show("Items added to cart successfully");
+                    MessageBox.Show("Items added to List successfully");
                     //DisplayData();
                 } else
                 {
@@ -462,7 +462,7 @@ namespace Restaurant_Management_System
                     mainCourseQuantity.Value = 0;
                     mainCourseUnitPrice.Clear();
                     mainCourseTotalPrice.Clear();
-                    MessageBox.Show("Items added to cart successfully");
+                    MessageBox.Show("Items added to List successfully");
                     //DisplayData();
                 }else
                 {
@@ -581,7 +581,7 @@ namespace Restaurant_Management_System
                     dessertQuantity.Value = 0;
                     dessertUnitPrice.Clear();
                     dessertTotalPrice.Clear();
-                    MessageBox.Show("Items added to cart successfully");
+                    MessageBox.Show("Items added to List successfully");
                     //DisplayData();
                 }
                 else
@@ -701,7 +701,7 @@ namespace Restaurant_Management_System
                     coldDrinkQuantity.Value = 0;
                     coldDrinkUnitPrice.Clear();
                     coldDrinkTotalPrice.Clear();
-                    MessageBox.Show("Items added to cart successfully");
+                    MessageBox.Show("Items added to List successfully");
                     //DisplayData();
                 }
                 else
@@ -904,7 +904,7 @@ namespace Restaurant_Management_System
                     beverageQuantity.Value = 0;
                     beverageUnitPrice.Clear();
                     beverageTotalPrice.Clear();
-                    MessageBox.Show("Items added to cart successfully");
+                    MessageBox.Show("Items added to List successfully");
                     //DisplayData();
                 }
                 else

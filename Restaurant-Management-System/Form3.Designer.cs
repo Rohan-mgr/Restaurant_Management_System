@@ -130,7 +130,7 @@ namespace Restaurant_Management_System
             this.go_Btn.Name = "go_Btn";
             this.go_Btn.Size = new System.Drawing.Size(135, 54);
             this.go_Btn.TabIndex = 3;
-            this.go_Btn.Text = "Go";
+            this.go_Btn.Text = "Occupy";
             this.go_Btn.UseVisualStyleBackColor = true;
             this.go_Btn.Click += new System.EventHandler(this.button2_Click);
             // 
